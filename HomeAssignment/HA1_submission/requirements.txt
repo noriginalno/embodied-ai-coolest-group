@@ -1,0 +1,8 @@
+# Analysis dependencies
+numpy
+pandas
+matplotlib
+scipy
+
+# Python kernel for running the notebook in VS Code / Jupyter
+ipykernel

@@ -1,0 +1,57 @@
+node_id,label,node_type,is_target,source,source_id
+C01,точка,target,TRUE,HA1; RuWordNet,120377-N
+C02,поверхность,target,TRUE,HA1; RuWordNet,107133-N
+C03,граница,target,TRUE,HA1; RuWordNet,106514-N
+C04,расстояние,target,TRUE,HA1; RuWordNet,106757-N
+C05,высота,target,TRUE,HA1; RuWordNet,106758-N
+C06,направление,target,TRUE,HA1; RuWordNet,106586-N
+C07,путь,target,TRUE,HA1; RuWordNet,183-N
+C08,вместилище,target,TRUE,HA1; RuWordNet,107038-N
+C09,отверстие,target,TRUE,HA1; RuWordNet,107087-N
+C10,между,target,TRUE,HA1,
+C11,над,target,TRUE,HA1,
+C12,внутри,target,TRUE,HA1,
+C13,ширина,target,TRUE,RuWordNet,i63979
+C14,глубина,target,TRUE,RuWordNet,i63971
+C15,центр,target,TRUE,RuWordNet,i81833
+C16,угол,target,TRUE,RuWordNet,i109918
+C17,пространство,target,TRUE,RuWordNet,i35583
+C18,место,target,TRUE,RuWordNet,106451-N; i35580; i82501
+C19,положение,target,TRUE,RuWordNet,i63666; i63667
+C20,координата,target,TRUE,RuWordNet,i68377
+C21,плоскость,target,TRUE,RuWordNet,i109765
+C22,площадь,target,TRUE,RuWordNet,i63937
+C23,объём,target,TRUE,RuWordNet,i109320
+C24,радиус,target,TRUE,RuWordNet,ILI not provided
+C25,диаметр,target,TRUE,RuWordNet,i63810; i109824
+A02,ЛИНИЯ ЧЕРТА,auxiliary,FALSE,RuWordNet,106582-N
+A03,КОЛИЧЕСТВО ВЕЛИЧИНА ЧИСЛО,auxiliary,FALSE,RuWordNet,106515-N
+A04,ФИЗИЧЕСКАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,147134-N
+A05,ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,
+A06,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,auxiliary,FALSE,RuWordNet,
+A07,ФИГУРА,auxiliary,FALSE,RuWordNet,
+A08,БЫТНОСТЬ МЕСТОНАХОЖДЕНИЕ,auxiliary,FALSE,RuWordNet,
+A09,ЧИСЛО,auxiliary,FALSE,RuWordNet,
+A10,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,auxiliary,FALSE,RuWordNet,
+A11,ПАРАМЕТР,auxiliary,FALSE,RuWordNet,
+A12,ВЕЛИЧИНА,auxiliary,FALSE,RuWordNet,
+A13,ЛИНЕЙНЫЙ РАЗМЕР,auxiliary,FALSE,RuWordNet,
+A14,ПРОТЯЖЕНИЕ,auxiliary,FALSE,RuWordNet,
+A15,ПРОТЯЖЕННОСТЬ,auxiliary,FALSE,RuWordNet,
+A16,РАЗМЕР,auxiliary,FALSE,RuWordNet,
+A17,ДИСТАНЦИЯ,auxiliary,FALSE,RuWordNet,
+A18,ДЛИНА,auxiliary,FALSE,RuWordNet,
+A19,ОТРЕЗОК,auxiliary,FALSE,RuWordNet,
+A20,ОТРЕЗОК ПРЯМОЙ,auxiliary,FALSE,RuWordNet,
+A21,ОТРЕЗОК ПРЯМОЙ ЛИНИИ,auxiliary,FALSE,RuWordNet,
+A22,СЕГМЕНТ,auxiliary,FALSE,RuWordNet,
+A23,СЕГМЕНТ ПРЯМОЙ ЛИНИИ,auxiliary,FALSE,RuWordNet,
+A25,СРЕДИНА СЕРЕДИНА,auxiliary,FALSE,RuWordNet,
+A26,МЕСТОНАХОЖДЕНИЕ НАХОЖДЕНИЕ ПРЕБЫВАНИЕ,auxiliary,FALSE,RuWordNet,
+A27,ПОЛОЖЕНИЕ РАСПОЛОЖЕНИЕ,auxiliary,FALSE,RuWordNet,
+HA1:153782-N,ПОСТОЯННАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,153782-N
+HA1:106768-N,"СВОЙСТВО, ХАРАКТЕРИСТИКА",auxiliary,FALSE,HA1; RuWordNet,106768-N
+HA1:146671-N,АБСТРАКТНАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,146671-N
+HA1:149355-N,ПОЛОСА НА ПОВЕРХНОСТИ,auxiliary,FALSE,HA1; RuWordNet,149355-N
+HA1:106581-N,"ПОЛОСА НА ПОВЕРХНОСТИ, В ПРОСТРАНСТВЕ",auxiliary,FALSE,HA1; RuWordNet,106581-N
+HA1:106509-N,СОСТАВНАЯ ЧАСТЬ,auxiliary,FALSE,HA1; RuWordNet,106509-N

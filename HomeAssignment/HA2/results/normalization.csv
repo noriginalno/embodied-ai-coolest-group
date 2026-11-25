@@ -1,5 +1,3 @@
 scope,node_count,edge_count,max_depth_shortest,max_depth_longest,max_descendants,breadth_log_denominator,slide28_raw_min,slide28_raw_max,min_normalization_nodes,normalization_status
-global,56,50,5,5,15,2.77258872223978,-4.02535169073515,0.97464830926485,10,ok
-POS:ADP,2,0,0,0,0,0,-0.693147180559945,-0.693147180559945,10,raw_only_small_graph
-POS:ADV,1,0,0,0,0,0,0,0,10,raw_only_small_graph
-POS:NOUN,53,50,5,5,15,2.77258872223978,-3.97029191355212,1.02970808644788,10,ok
+global,44,37,5,5,18,2.94443897916644,-3.09104245335832,1.21581036608174,10,ok
+POS:NOUN,44,37,5,5,18,2.94443897916644,-3.09104245335832,1.21581036608174,10,ok

@@ -65,10 +65,10 @@ def load_inputs(data_dir=DATA_DIR):
     nodes["POS_provenance"] = provenance
     # Definitions are copied, not generated; auxiliary definitions remain absent.
     concepts = pd.read_csv(
-        data_dir / "raw/Concepts_hw2.csv", dtype=str, keep_default_na=False
+        data_dir / "concepts.csv", dtype=str, keep_default_na=False
     )
     if not concepts.concept_id.is_unique:
-        raise ValueError("Duplicate concept IDs in raw/Concepts_hw2.csv")
+        raise ValueError("Duplicate concept IDs in concepts.csv")
     definitions = concepts.set_index("concept_id")
     nodes["definition"] = nodes.node_id.map(definitions.definition).fillna("")
     nodes["definition_provenance"] = nodes.node_id.map(
@@ -127,10 +127,8 @@ def audit_directions(data_dir, nodes, edges):
     """Check storage orientation against source parent/child columns, not meaning."""
     data_dir = Path(data_dir)
     raw = pd.read_csv(data_dir / "raw/Edges.csv", dtype=str, keep_default_na=False)
-    aliases = {"A24": "C01", "A01": "C18", "A28": "C18"}
     evidence = {
-        (aliases.get(r.parent, r.parent), aliases.get(r.child, r.child)):
-        "raw/Edges.csv: parent -> child (role 2 aliases)"
+        (r.source, r.target): "raw/Edges.csv: source -> target"
         for r in raw.itertuples(index=False) if r.relation == "is_a"
     }
     ha1_path = data_dir.parent / "HA1_submission/data/ruwordnet_edges.csv"
@@ -336,7 +334,7 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
             encoding="utf-8",
         )
     checks = {
-        "source_commit": "5ca95838c2b38ae84cf26a23cdb1cf9be71ac4b6",
+        "input_snapshot": "HA2 CSV exports, 2026-11-25",
         "node_count": len(nodes), "target_count": len(targets),
         "auxiliary_count": int(nodes.node_type.eq("auxiliary").sum()),
         "typed_edge_count": len(edges), "relation_counts": edges.relation.value_counts().to_dict(),
@@ -351,10 +349,9 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
         "taxonomy_direction": "parent_to_child; u -> v means v is_a u",
         "non_taxonomic_edges_used_for_specificity": 0,
         "warnings": [
-            "Input has 56 nodes, not 15–25. Inventory is retained without review by role 3.",
+            f"Input has {len(nodes)} graph nodes, including {len(targets)} targets.",
             "Observed roots/leaves/isolates are properties of this snapshot, not all of RuWordNet.",
             "POS is supplemented manually where a synset suffix is unavailable; see pos_annotations.csv.",
-            "ADP and ADV subgraphs have fewer than 10 nodes: normalized POS values are undefined.",
             "Primary global scores for isolates are mechanical values, not evidence of lexical specificity.",
             "Alternative slide 28 formula and POS normalization are diagnostic, not primary scores.",
         ],
@@ -364,14 +361,14 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
     )
     paths = [
         data_dir / "nodes.csv", data_dir / "edges.csv", data_dir / "pos_annotations.csv",
-        data_dir / "raw/Concepts_hw2.csv", data_dir / "raw/Edges.csv",
+        data_dir / "concepts.csv", data_dir / "raw/Edges.csv",
         data_dir / "ha2_analysis.py",
         data_dir.parent / "HA1_submission/data/ruwordnet_edges.csv",
         data_dir.parents[1] / "Seminars/Class03/Class_03_Instructor_Working_Notebook.ipynb",
         data_dir.parents[1] / "Seminars/Class03/Class_03_Semantic_Networks_Lecture_and_Seminar_Expanded_Lecture.pptx",
     ]
     manifest = {
-        "source_commit": checks["source_commit"], "python": sys.version.split()[0],
+        "input_snapshot": checks["input_snapshot"], "python": sys.version.split()[0],
         "packages": {p: importlib.metadata.version(p) for p in (
             "numpy", "pandas", "matplotlib", "networkx", "nbformat", "nbclient", "ipykernel"
         )},

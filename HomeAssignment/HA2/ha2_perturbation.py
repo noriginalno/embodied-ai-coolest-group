@@ -13,17 +13,17 @@ FEATURES = [
     "visual", "auditory", "tactile", "motor", "proprioceptive", "interoceptive", "social"
 ]
 ADDITIONS = [
-    ("A06", "is_a", "C21", "manual", "medium",
-     "Неограниченная плоскость рассматривается как геометрическая фигура."),
-    ("A10", "is_a", "C05", "manual", "medium",
+    ("A07", "is_a", "A08", "manual", "medium",
+     "Линейный размер является величиной."),
+    ("A11", "is_a", "C05", "manual", "medium",
      "Высота относительно уровня отсчёта является количественным параметром положения."),
-    ("C13", "associated_with", "C14", "manual", "high",
+    ("C10", "associated_with", "C11", "manual", "high",
      "Ширина и глубина используются как пространственные измерения объекта."),
 ]
 REMOVALS = [
-    ("C01", "is_a", "C15"),
-    ("A04", "is_a", "C18"),
-    ("A10", "is_a", "C05"),
+    ("C01", "is_a", "C18"),
+    ("A05", "is_a", "C13"),
+    ("A11", "is_a", "C05"),
 ]
 KEYS = ["source", "relation", "target"]
 METRICS = ["S_depth", "S_breadth"]
@@ -39,7 +39,7 @@ def minmax(values):
 
 
 def quadrant_coverage(scores):
-    concepts = pd.read_csv(ROOT / "raw/Concepts_hw2.csv").set_index("concept_id")
+    concepts = pd.read_csv(ROOT / "concepts.csv").set_index("concept_id")
     targets = scores[scores.is_target == "TRUE"].set_index("node_id")
     if len(concepts) != 25 or not concepts.index.is_unique:
         raise ValueError("Expected 25 unique concepts")
@@ -81,9 +81,9 @@ def main():
     additions = pd.DataFrame(ADDITIONS, columns=edges.columns)
     original_keys = pd.MultiIndex.from_frame(edges[KEYS])
     assert not pd.MultiIndex.from_frame(additions[KEYS]).isin(original_keys).any()
-    assert taxonomy.in_degree("C21") == 0 and taxonomy.in_degree("C05") == 1
-    assert taxonomy.out_degree("C15") == 0
-    assert taxonomy.in_degree("A04") > 0 and taxonomy.out_degree("C18") > 0
+    assert taxonomy.in_degree("A08") == 0 and taxonomy.in_degree("C05") == 1
+    assert taxonomy.out_degree("C18") == 0
+    assert taxonomy.in_degree("A05") > 0 and taxonomy.out_degree("C13") > 0
 
     added = pd.concat([edges, additions], ignore_index=True)
     _, after_add_graph, after_add, add_constants = evaluate(nodes, added)

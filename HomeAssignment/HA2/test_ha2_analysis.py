@@ -145,8 +145,8 @@ class SpecificityTests(unittest.TestCase):
         s = scores.set_index("node_id")
         # HA1 root->abstract entity->property->quantity->distance->height.
         self.assertEqual(s.loc["C05", "depth_min"], 5)
-        # A05->place, and HA1 root->A04->place.
-        self.assertEqual((s.loc["C18", "depth_min"], s.loc["C18", "depth_max"]), (1, 2))
+        # Permanent entity -> physical entity -> place.
+        self.assertEqual((s.loc["C13", "depth_min"], s.loc["C13", "depth_max"]), (2, 2))
         self.assertEqual(len(scores[scores.is_target.eq("TRUE")]), 25)
         self.assertEqual(constants.set_index("scope").loc["global", "node_count"], len(nodes))
         self.assertEqual(before, {p: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})

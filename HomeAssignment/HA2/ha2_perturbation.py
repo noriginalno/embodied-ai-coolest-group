@@ -256,8 +256,8 @@ def run_perturbation(data_dir=ROOT):
             ("normalization", state["constants"]),
         ):
             csv_payload(f"{name}_{suffix}.csv", table)
-        json_payload(f"{name}_graph.json", nx.node_link_data(state["full"]))
-        json_payload(f"{name}_taxonomy_graph.json", nx.node_link_data(state["taxonomy"]))
+        json_payload(f"{name}_graph.json", nx.node_link_data(state["full"], edges="edges"))
+        json_payload(f"{name}_taxonomy_graph.json", nx.node_link_data(state["taxonomy"], edges="edges"))
     csv_payload("comparison.csv", comparison, index=True)
     csv_payload("deltas.csv", deltas)
     csv_payload("changes_gt_0_1.csv", large)

@@ -29,7 +29,7 @@ class ArtifactTests(unittest.TestCase):
         for stage in ("after_add", "after_remove"):
             with self.subTest(stage=stage):
                 graph_path = artifacts.ROOT / f"results/perturbation/{stage}_taxonomy_graph.json"
-                taxonomy = nx.node_link_graph(json.loads(graph_path.read_text()))
+                taxonomy = nx.node_link_graph(json.loads(graph_path.read_text()), edges="edges")
                 # Standalone Agg canvas: no GUI backend or pyplot registry mutation.
                 with patch.object(artifacts.analysis.plt, "figure", side_effect=agg_figure):
                     figure = artifacts.analysis.draw_taxonomy(taxonomy)
@@ -76,7 +76,7 @@ class ArtifactTests(unittest.TestCase):
             self.assertEqual(run.stderr, "")
             result = json.loads(run.stdout)
             self.assertEqual(result["figure_files"], 16)
-            self.assertFalse(result["interpretation_written"])
+            self.assertTrue(result["interpretation_written"])
             self.assertEqual(archived.read_text(), "Unrelated historical artifact")
             self.assertEqual(raw_before, {p.name: p.read_bytes() for p in (data / "raw").iterdir()})
             self.assertEqual(inputs_before, {name: (data / name).read_bytes() for name in inputs_before})

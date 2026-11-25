@@ -1,0 +1,9 @@
+# Interpreting specificity in the spatial network
+
+The network contains 25 target concepts and 19 auxiliary categories. Its two specificity measures answer different questions. Depth records how many taxonomic steps separate a concept from its nearest observed root. Breadth measures how few distinct descendants it has in this inventory. For example, place and space both have a depth score of 0.40. Place has seven descendants and space has three, giving breadth scores of 0.29 and 0.53 respectively. Cave, by comparison, has depth 0.80 and breadth 1.00. Its high breadth score reflects the absence of cave subtypes in our sample. RuWordNet may contain additional distinctions.
+
+Adding physical entity as a second parent of cavity shortened an existing route. Cavity, cave and cavern each lost 0.20 in normalized depth even though no concept changed meaning. The new edge linked an ancestor to an already reachable descendant, so that edge alone contributed no new descendants. The association between echolocation and distance also had no effect on either score because both calculations use only taxonomic edges.
+
+We additionally tested the deletion sequence specified on seminar slide 30. Removing the leaf edge to height isolated it. Removing the link from place to point separated the branch containing center. Removing the added parent of cavity restored its original shortest path. Distance retained a raw depth of four, yet its normalized depth rose from 0.80 to 1.00 because the maximum shortest depth fell from five to four. Thus even concepts outside a locally edited branch can change score.
+
+All four HA1 quadrants contain at least five targets, including when spatial nearness receives a social rating of zero. This coverage supports comparisons within the inventory. Generalization remains limited by the spatial focus, partial hypernym paths and nine disconnected baseline components. A score describes a concept’s position in this sampled network.

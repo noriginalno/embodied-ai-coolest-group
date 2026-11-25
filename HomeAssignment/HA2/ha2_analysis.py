@@ -307,7 +307,7 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
         frame.to_csv(output / name, index=False, float_format="%.15g", lineterminator="\n")
     for name, graph in (("typed_graph.json", full), ("taxonomy_graph.json", taxonomy)):
         (output / name).write_text(
-            json.dumps(nx.node_link_data(graph), ensure_ascii=False, indent=2) + "\n",
+            json.dumps(nx.node_link_data(graph, edges="edges"), ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
     warnings = [

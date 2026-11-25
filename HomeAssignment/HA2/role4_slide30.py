@@ -13,7 +13,8 @@ def run(data_dir=ROOT):
     stages = Path(data_dir) / "results/perturbation"
     out = Path(data_dir) / "results/slide30"
     nodes, baseline_edges = load_inputs(data_dir)
-    added = pd.read_csv(stages / "after_add_edges.csv", keep_default_na=False)
+    reachability_reference_stage = "after_add"
+    added = pd.read_csv(stages / f"{reachability_reference_stage}_edges.csv", keep_default_na=False)
     keys = ["source", "relation", "target"]
     added_keys = pd.MultiIndex.from_frame(added[keys])
     second_parent = ("A05", "is_a", "C14")
@@ -42,6 +43,7 @@ def run(data_dir=ROOT):
             values = pd.read_csv(stages / f"{stage}_specificity.csv")
         distances = nx.multi_source_dijkstra_path_length(taxonomy, roots, weight=None)
         values["stage"] = stage
+        values["reachability_reference_stage"] = reachability_reference_stage
         values["reachable_from_pre_deletion_roots"] = values.node_id.isin(distances)
         values["coverage_fixed_roots"] = values.node_id.map(
             lambda n: "covered" if n in distances else "out_of_coverage")
@@ -49,7 +51,7 @@ def run(data_dir=ROOT):
         values["baseline_denominator"] = fixed_denominator
         values["S_depth_fixed_denominator"] = values.depth_min / fixed_denominator
         diagnostic.append(values)
-    fields = ["stage", "node_id", "label", "depth_min", "depth_max",
+    fields = ["stage", "reachability_reference_stage", "node_id", "label", "depth_min", "depth_max",
               "max_depth_shortest", "max_depth_longest", "S_depth",
               "S_depth_range_min", "S_depth_range_max", "S_breadth",
               "reachable_from_pre_deletion_roots", "coverage_fixed_roots",

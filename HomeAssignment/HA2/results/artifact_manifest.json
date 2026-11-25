@@ -19,7 +19,7 @@
     "ha2_coverage.py": "118953126809f9a44ea1f9c9831cda4e2a30b2c038ce5df2619e60bf5b51eaea",
     "ha2_perturbation.py": "1bbace5b0477140488fb3cfc117f9b8854ef798f5402f6ad22631b2344dceae0",
     "ha2_artifacts.py": "136a73394a20b9ebb15862b8b0e1e45b391d3ff58fa53d9c85fe1c427f7d6803",
-    "role4_slide30.py": "cbef7fbb661e9e09b9b0b06044c1964fa4f3da21f4ccd65fb291c4b531cc8ff9"
+    "role4_slide30.py": "aec8dc8749d5cd97f7ecaad03e2b094c61e679738344c2bf0f2d013414e71c7a"
   },
   "notebook_source_sha256": "1a3e749158667f830d8bf884907ded0e23578e3fbbac0166f6bfcd6c8ca556e5",
   "notebook_hash_policy": "cell types and sources only; outputs and execution timestamps excluded",
@@ -27,7 +27,7 @@
     "INPUT_FORMAT.md": "512d9a6e3fc7ed2763b09c4c3ac39bf20d890011f5871ba8fdbf37c19ea437d8",
     "INTERPRETATION.md": "10bd4fb68d1dbb1344790bd333cf5478ec03a3db970e74edf6916b4161453053",
     "README.md": "9ab8460dbfafa213f761ae2d697a9f111821bd480c4758922c08e0a4eb3df464",
-    "ROLE4.md": "7688cbc7a7c8e40f21280ec5861f3ab855ebdeaa3a240c4b366b55217d428154",
+    "ROLE4.md": "e905622d8114e33c14530609c52d3f20e01b7eb3009c55325636efde27909a07",
     "figures/ha1_quadrants.png": "75b4ca2dd7c2c929437757c75496d2ae98ab39e56ae21d270ed10a30813f34ce",
     "figures/ha1_quadrants.svg": "53d2dd73060809db709c2bd17164eda6fe38e7cb35786c28a57280a603d9f0e8",
     "figures/non_taxonomic.png": "1eb2323f8d5a96c20845dd7b8f817b65ded46b83e089f5526491c60db9c04aaa",
@@ -84,7 +84,7 @@
     "results/slide30/after_remove_edges.csv": "236c5e1d669aa82b04659f894888cd381b94910705e3ab891846644e019b7a81",
     "results/slide30/after_remove_specificity.csv": "f4c663c6f1c91e55be0bf8fb75d0661a73e7621e2fff742cdc5bd368e9290de7",
     "results/slide30/changes_gt_0_1.csv": "9fbf75c0dfbab2e0376d0e5dbc5fbc8d4f99c822af64070dc70abb89cb2f6503",
-    "results/slide30/coverage_audit.csv": "ad597247ce71ac00ca620b3b64ed40ff5aeb0eae8410c209dc14b8b829965559",
+    "results/slide30/coverage_audit.csv": "545b967ee3943f0d1b96bd881e5159c10d5c318b84528962fab36d3f694864c0",
     "results/slide30/normalization.csv": "c99ccc898dba0a410f63ecf5dcf97e77e3c0ab8e6b51a80dc3b1cc42af49120d",
     "results/specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
     "results/specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",

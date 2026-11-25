@@ -1,0 +1,4 @@
+stage,components,roots,isolates,multiple_parents
+baseline,9,15,0,7
+after_add,8,14,0,8
+after_remove,11,16,1,7

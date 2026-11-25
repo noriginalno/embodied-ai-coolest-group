@@ -1,0 +1,42 @@
+source,relation,target,provenance,confidence,justification
+A01,is_a,A02,RuWordNet,high,153782-N -> 146671-N in the supplied RuWordNet edge chain.
+A01,is_a,A05,RuWordNet,high,153782-N -> 147134-N in the supplied RuWordNet edge chain.
+A02,is_a,A03,RuWordNet,high,146671-N -> 106768-N in the supplied RuWordNet edge chain.
+A03,is_a,A04,RuWordNet,high,106768-N -> 106515-N in the supplied RuWordNet edge chain.
+A05,is_a,C12,RuWordNet extraction,medium,Physical entity is recorded as the hypernym of the selected space sense; child identified by ILI i35583.
+A05,is_a,C13,RuWordNet/HA1,medium,Physical entity is recorded as the hypernym of place in space (106451-N).
+C13,is_a,C01,RuWordNet,high,106451-N -> 120377-N.
+C13,is_a,C02,RuWordNet,high,106451-N -> 107133-N.
+C13,is_a,C06,RuWordNet,high,106451-N -> 106586-N.
+C13,is_a,C08,RuWordNet,high,106451-N -> 107038-N.
+C13,is_a,C09,RuWordNet,high,106451-N -> 107087-N.
+C06,is_a,C07,RuWordNet,high,106586-N -> 183-N.
+A06,is_a,C03,RuWordNet,high,106582-N -> 106514-N.
+A04,is_a,C04,RuWordNet,high,106515-N -> 106757-N.
+C04,is_a,C05,RuWordNet,high,106757-N -> 106758-N.
+A07,is_a,C10,RuWordNet page,medium,«Величина» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.
+A07,is_a,C11,RuWordNet page,medium,«Величина» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.
+A08,is_a,C10,RuWordNet page,medium,«Линейный размер» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.
+A08,is_a,C11,RuWordNet page,medium,«Линейный размер» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.
+C12,is_a,C14,RuWordNet,high,The selected spatial cavity sense has direct hypernym space (ILI i110049).
+C14,is_a,C15,RuWordNet,high,«Пещера» is listed as a hyponym of the selected spatial «полость» sense (ILI i85180).
+C14,is_a,C16,RuWordNet,medium,«Каверна» sense 2 (rock cavity) is listed in the spatial cavity branch; sense 1 is excluded.
+C10,is_a,C17,RuWordNet page,medium,Width is listed among the hypernym labels for «поперечник»; direction is parent -> child.
+C01,is_a,C18,RuWordNet,medium,"The selected sense is «центр, центральная точка»; the source lists «точка пространства» as its hypernym."
+A09,is_a,C19,RuWordNet page,medium,«Геометрическая фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.
+A10,is_a,C19,RuWordNet page,medium,«Фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.
+A11,is_a,C20,RuWordNet page,medium,«Количественный параметр» is listed as a hypernym of area-as-parameter; source ID not captured.
+A12,is_a,C20,RuWordNet page,medium,«Параметр» is listed as a hypernym of area-as-parameter; source ID not captured.
+A11,is_a,C21,RuWordNet page,medium,«Количественный параметр» is listed as a hypernym of spatial volume; source ID not captured.
+A12,is_a,C21,RuWordNet page,medium,«Параметр» is listed as a hypernym of spatial volume; source ID not captured.
+A13,is_a,C22,RuWordNet page,medium,The checked spatial-nearness sense (ILI i63721) lists «малость» among its hypernyms; this branch is retained as sourced and not merged into the physical-place branch.
+A14,is_a,C23,RuWordNet page,medium,"«Определение местонахождения» is listed among the hypernyms of echolocation; it is a process branch, not the physical-space entity branch."
+A15,is_a,C24,RuWordNet page,medium,«Физическое самочувствие» is listed as a hypernym of dizziness (ILI i112532).
+A16,is_a,C24,RuWordNet page,medium,«Физическое состояние» is listed as a hypernym of dizziness (ILI i112532).
+A17,is_a,C25,RuWordNet page,medium,«Выяснение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.
+A18,is_a,C25,RuWordNet page,medium,«Определение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.
+A19,is_a,C25,RuWordNet page,medium,«Установление» is listed among the hypernyms of the selected orientation sense; source ILI i109572.
+C22,describes_relative_proximity_between,C13,manual,low,«Близость» denotes nearness between places/objects; this association is not an is_a relation.
+C23,used_for_localization_of,C13,RuWordNet gloss/manual,medium,The checked gloss defines echolocation as a method for determining an object’s location using returning echoes.
+C24,affects_perceived_orientation,C25,manual,medium,"A dizziness sensation can affect perceived spatial orientation; this is a semantic association, not a taxonomic claim."
+C25,orients_relative_to,C06,RuWordNet association/manual,medium,The selected orientation sense is alignment relative to directions; RuWordNet also lists «направление» among associated concepts.

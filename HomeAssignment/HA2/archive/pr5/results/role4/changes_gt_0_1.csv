@@ -1,0 +1,54 @@
+node_id,label,is_target,from,to,metric,delta
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_add,S_depth,0.15
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_add,S_depth,0.25
+C01,точка,TRUE,baseline,after_add,S_depth,0.15
+C02,поверхность,TRUE,baseline,after_add,S_depth,0.15
+C04,расстояние,TRUE,baseline,after_add,S_depth,0.2
+C05,высота,TRUE,baseline,after_add,S_depth,-0.75
+C06,направление,TRUE,baseline,after_add,S_depth,0.15
+C07,путь,TRUE,baseline,after_add,S_depth,0.2
+C08,вместилище,TRUE,baseline,after_add,S_depth,0.15
+C09,отверстие,TRUE,baseline,after_add,S_depth,0.15
+C14,полость,TRUE,baseline,after_add,S_depth,0.15
+C15,пещера,TRUE,baseline,after_add,S_depth,0.2
+C16,каверна,TRUE,baseline,after_add,S_depth,0.2
+C18,центр,TRUE,baseline,after_add,S_depth,0.2
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_remove,S_depth,0.2
+C01,точка,TRUE,baseline,after_remove,S_depth,-0.4
+C02,поверхность,TRUE,baseline,after_remove,S_depth,-0.4
+C06,направление,TRUE,baseline,after_remove,S_depth,-0.4
+C07,путь,TRUE,baseline,after_remove,S_depth,-0.4
+C08,вместилище,TRUE,baseline,after_remove,S_depth,-0.4
+C09,отверстие,TRUE,baseline,after_remove,S_depth,-0.4
+C13,место,TRUE,baseline,after_remove,S_depth,-0.4
+C18,центр,TRUE,baseline,after_remove,S_depth,-0.8
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,-0.124585171738
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_remove,S_breadth,-0.107311825902
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,0.199928751555
+A07,ВЕЛИЧИНА,FALSE,baseline,after_remove,S_breadth,-0.200369914738
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_remove,S_breadth,-0.107311825902
+C01,точка,TRUE,baseline,after_remove,S_breadth,0.235408913367
+C12,пространство,TRUE,baseline,after_remove,S_breadth,-0.107311825902
+C13,место,TRUE,baseline,after_remove,S_breadth,-0.105280822857
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,after_add,after_remove,S_depth,-0.15
+C01,точка,TRUE,after_add,after_remove,S_depth,-0.55
+C02,поверхность,TRUE,after_add,after_remove,S_depth,-0.55
+C04,расстояние,TRUE,after_add,after_remove,S_depth,-0.2
+C05,высота,TRUE,after_add,after_remove,S_depth,0.75
+C06,направление,TRUE,after_add,after_remove,S_depth,-0.55
+C07,путь,TRUE,after_add,after_remove,S_depth,-0.6
+C08,вместилище,TRUE,after_add,after_remove,S_depth,-0.55
+C09,отверстие,TRUE,after_add,after_remove,S_depth,-0.55
+C13,место,TRUE,after_add,after_remove,S_depth,-0.5
+C14,полость,TRUE,after_add,after_remove,S_depth,-0.15
+C15,пещера,TRUE,after_add,after_remove,S_depth,-0.2
+C16,каверна,TRUE,after_add,after_remove,S_depth,-0.2
+C18,центр,TRUE,after_add,after_remove,S_depth,-1.0
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_breadth,-0.124585171738
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,after_add,after_remove,S_breadth,-0.107311825902
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_breadth,0.199928751555
+A07,ВЕЛИЧИНА,FALSE,after_add,after_remove,S_breadth,-0.124585171738
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,after_add,after_remove,S_breadth,-0.107311825902
+C01,точка,TRUE,after_add,after_remove,S_breadth,0.235408913367
+C12,пространство,TRUE,after_add,after_remove,S_breadth,-0.107311825902
+C13,место,TRUE,after_add,after_remove,S_breadth,-0.105280822857

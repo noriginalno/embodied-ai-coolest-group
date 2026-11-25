@@ -10,6 +10,7 @@ import networkx as nx
 import pandas as pd
 
 import ha2_analysis as analysis
+from role4_slide30 import run as slide30
 from ha2_coverage import QUADRANTS, baseline_identity, checked_baseline, run_coverage
 from ha2_perturbation import run_perturbation
 
@@ -20,8 +21,9 @@ FIGURE_STEMS = [
     "perturbation/after_add_taxonomy", "perturbation/after_add_non_taxonomic",
     "perturbation/after_remove_taxonomy", "perturbation/after_remove_non_taxonomic",
 ]
-CODE_FILES = ["sync.py", "ha2_analysis.py", "ha2_coverage.py", "ha2_perturbation.py", "ha2_artifacts.py"]
-DOC_FILES = ["README.md", "ROLE4.md", "INPUT_FORMAT.md"]
+CODE_FILES = ["sync.py", "ha2_analysis.py", "ha2_coverage.py", "ha2_perturbation.py", "ha2_artifacts.py", "role4_slide30.py"]
+DOC_FILES = ["README.md", "ROLE4.md", "INPUT_FORMAT.md", "INTERPRETATION.md"]
+SLIDE30 = ["results/slide30/" + name for name in ("after_remove_edges.csv", "after_remove_specificity.csv", "normalization.csv", "changes_gt_0_1.csv")]
 
 
 def sha256(path):
@@ -124,7 +126,7 @@ def render_artifacts(data_dir=ROOT):
                 graph_paths = [f"results/perturbation/{stage}_{suffix}.json"
                                for suffix in ("taxonomy_graph", "graph")]
                 stems = [f"perturbation/{stage}_{suffix}" for suffix in ("taxonomy", "non_taxonomic")]
-            graphs = [nx.node_link_graph(json.loads((data_dir / p).read_text())) for p in graph_paths]
+            graphs = [nx.node_link_graph(json.loads((data_dir / p).read_text()), edges="edges") for p in graph_paths]
             for index, (graph, stem, draw) in enumerate(zip(
                 graphs, stems, (analysis.draw_taxonomy, analysis.draw_non_taxonomic)
             )):
@@ -157,13 +159,15 @@ def write_artifact_manifest(data_dir=ROOT):
     source_hash = notebook_source_sha256(data_dir / "HA2_Semantic_Network.ipynb")
     if source_hash != baseline["notebook_source_sha256"]:
         raise ValueError("Notebook sources changed after the baseline run")
+    baseline["interpretation_written"] = True
     baseline["artifacts_status"] = "computed"
     baseline["artifacts_manifest"] = "artifact_manifest.json"
     (data_dir / "results/run_manifest.json").write_text(
         json.dumps(baseline, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     paths += [f"figures/{stem}.{suffix}" for stem in FIGURE_STEMS for suffix in ("png", "svg")]
-    paths += DOC_FILES
+    slide30(data_dir)
+    paths += DOC_FILES + SLIDE30
     manifest = dict(
         run_kind="complete_artifacts", source_commit=baseline["source_commit"],
         baseline_identity_sha256=baseline_identity(baseline),
@@ -173,7 +177,7 @@ def write_artifact_manifest(data_dir=ROOT):
         notebook_hash_policy="cell types and sources only; outputs and execution timestamps excluded",
         current_output_sha256={name: sha256(data_dir / name) for name in sorted(paths)},
         archive_policy="archive/ is excluded; PR5 alternatives are preserved there verbatim",
-        artifacts_status="computed", interpretation_written=False,
+        artifacts_status="computed", interpretation_written=True,
     )
     (data_dir / "results/artifact_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -187,7 +191,7 @@ def verify_artifacts(data_dir=ROOT):
     baseline, paths = checked_computations(data_dir)
     if baseline.get("artifacts_status") != "computed":
         raise ValueError("Artifact integration is pending")
-    expected = set(paths + DOC_FILES + [
+    expected = set(paths + DOC_FILES + SLIDE30 + [
         f"figures/{stem}.{suffix}" for stem in FIGURE_STEMS for suffix in ("png", "svg")
     ])
     if set(manifest["current_output_sha256"]) != expected:
@@ -201,7 +205,7 @@ def verify_artifacts(data_dir=ROOT):
     if manifest["notebook_source_sha256"] != notebook_source_sha256(data_dir / "HA2_Semantic_Network.ipynb"):
         raise ValueError("Artifact notebook sources changed")
     return dict(verified_files=len(expected), figure_files=len(FIGURE_STEMS) * 2,
-                source_commit=manifest["source_commit"], interpretation_written=False)
+                source_commit=manifest["source_commit"], interpretation_written=True)
 
 
 def run_artifacts(data_dir=ROOT):

@@ -305,7 +305,7 @@ class PerturbationTests(unittest.TestCase):
             self.assertEqual(final.get("coverage_manifest"),source.get("coverage_manifest"))
             self.assertEqual(final["perturbation_status"],"computed")
             self.assertTrue(final["perturbation_performed"])
-            self.assertFalse(final["interpretation_written"])
+            self.assertEqual(final["interpretation_written"], source["interpretation_written"])
             before_export_failure = {p.name: p.read_bytes() for p in output.iterdir()}
             # A scenario failure must leave the previous valid export intact.
             bad_additions = copy.deepcopy(experiment.ADDITIONS)

@@ -1,7 +1,7 @@
 {
   "run_kind": "ha1_coverage",
   "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
-  "baseline_identity_sha256": "ac20a85ef6687cf6c3eea446131e71491526489ce1c5a7175ee9a248c19a7fb2",
+  "baseline_identity_sha256": "9f17b1ca02ad75242695c004a39023c65ca7e2a75c04ab97108171d0ac8f4488",
   "baseline_output_sha256": {
     "specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
     "specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",

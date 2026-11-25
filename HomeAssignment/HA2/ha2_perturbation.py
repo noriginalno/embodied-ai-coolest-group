@@ -294,6 +294,8 @@ def run_perturbation(data_dir=ROOT):
     manifest["perturbation_status"] = "computed"
     manifest["perturbation_performed"] = True
     manifest["perturbation_manifest"] = "perturbation/run_manifest.json"
+    manifest["artifacts_status"] = "not_recomputed"
+    manifest.pop("artifacts_manifest", None)
     (data_dir / "results/run_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

@@ -1,7 +1,7 @@
 {
   "run_kind": "ha1_coverage",
   "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
-  "baseline_identity_sha256": "497bddb97e40e840b2c164e69cbdd6625b03fbbad43678e71952980a72831780",
+  "baseline_identity_sha256": "ac20a85ef6687cf6c3eea446131e71491526489ce1c5a7175ee9a248c19a7fb2",
   "baseline_output_sha256": {
     "specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
     "specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",
@@ -12,7 +12,7 @@
     "taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
     "validation.json": "1e290be9e4ef1e1cf27e354a026f2e610c9a01f4f00b9e7b411cabaac0bc8033"
   },
-  "coverage_code_sha256": "bb8b2be3c2bf18305d65475dce61cd27e6d4232e931d0513e445acf1b1b6b9e8",
+  "coverage_code_sha256": "118953126809f9a44ea1f9c9831cda4e2a30b2c038ce5df2619e60bf5b51eaea",
   "input_sha256": {
     "raw/Concepts_hw2.csv": "86a0ab7bed479952c1716b6b15e978a6323299058056b43321afd4c222b27955",
     "nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",

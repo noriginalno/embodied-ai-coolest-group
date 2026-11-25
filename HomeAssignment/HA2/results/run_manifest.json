@@ -28,10 +28,10 @@
   },
   "input_paths_relative_to": "data_dir",
   "code_sha256": {
-    "ha2_analysis.py": "4e0e28ad7958b29b2fe70f0d7b06c453520e6632a90ed54dd100b433da2bc118",
+    "ha2_analysis.py": "e7b22783ae842029cc14557abeaf0e60c986a10bff1f689922e54ecab4c31b8d",
     "sync.py": "7cdda9af422116bdc17015035ce9d2084e500c247aaf39dd8be63314d8b81309"
   },
-  "notebook_source_sha256": "30343db644cbb272f1c31872cf38f5d1b1e6391747e44b7c15c24a86dbcc6768",
+  "notebook_source_sha256": "bb70ad7e86ba3af8a30ec3fa0f05afcfe2326da814bdb11622e7169c9aadda78",
   "reference_sha256": {
     "Seminars/Class03/Class_03_Instructor_Working_Notebook.ipynb": "9903c42755b148b608153a17dca75d8e3b56614b351ea33395b7457ac7048d49",
     "Seminars/Class03/Class_03_Semantic_Networks_Lecture_and_Seminar_Expanded_Lecture.pptx": "4b3b6c80365c7789853620a21f302e3afee7f4abff098c9477338788881b75c8"
@@ -50,9 +50,11 @@
   "normalization_constants": "normalization.csv",
   "coverage_status": "computed",
   "perturbation_status": "computed",
-  "legacy_role4_outputs": "results/role4 belongs to the previous input snapshot",
+  "artifacts_status": "computed",
+  "archived_alternative": "archive/pr5 contains the separate PR5 experiment, not current outputs",
   "interpretation_written": false,
   "perturbation_performed": true,
   "coverage_manifest": "ha1_coverage/run_manifest.json",
-  "perturbation_manifest": "perturbation/run_manifest.json"
+  "perturbation_manifest": "perturbation/run_manifest.json",
+  "artifacts_manifest": "artifact_manifest.json"
 }

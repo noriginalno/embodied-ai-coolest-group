@@ -228,6 +228,8 @@ def run_coverage(data_dir=ROOT):
     )
     baseline["coverage_status"] = "computed"
     baseline["coverage_manifest"] = "ha1_coverage/run_manifest.json"
+    baseline["artifacts_status"] = "not_recomputed"
+    baseline.pop("artifacts_manifest", None)
     (data_dir / "results/run_manifest.json").write_text(
         json.dumps(baseline, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )

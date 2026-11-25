@@ -33,6 +33,7 @@ RELATION_COLORS = {
     "used_for_localization_of": "#167c80",
     "affects_perceived_orientation": "#7851a9",
     "orients_relative_to": "#a54519",
+    "estimates": "#286c39",
 }
 TARGET_COLOR = "#dcedfa"
 AUXILIARY_COLOR = "#edf0f2"
@@ -405,7 +406,8 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
         "normalization_constants": "normalization.csv",
         "coverage_status": "not_recomputed",
         "perturbation_status": "not_recomputed",
-        "legacy_role4_outputs": "results/role4 belongs to the previous input snapshot",
+        "artifacts_status": "not_recomputed",
+        "archived_alternative": "archive/pr5 contains the separate PR5 experiment, not current outputs",
         "interpretation_written": False, "perturbation_performed": False,
     }
     (output / "run_manifest.json").write_text(
@@ -428,6 +430,33 @@ def layered_positions(taxonomy):
         for i, n in enumerate(sorted(layer, key=order_key)):
             positions[n] = (i - (len(layer) - 1) / 2, -depth)
     return positions
+
+
+def _edge_curve(ax, start, end, blocked_boxes, preferred):
+    """Choose a deterministic quadratic arc that avoids unrelated node boxes."""
+    sx, sy = start
+    ex, ey = end
+    candidates = [0] + [
+        direction * radius
+        for radius in (.16, .3, .45, .65, .9)
+        for direction in (preferred, -preferred)
+    ]
+    best, best_score = 0, (True, float("inf"))
+    for curve in candidates:
+        cx, cy = (sx + ex) / 2 + curve * (ey - sy), (sy + ey) / 2 - curve * (ex - sx)
+        points = [
+            ((1-t)**2 * sx + 2*(1-t)*t * cx + t*t * ex,
+             (1-t)**2 * sy + 2*(1-t)*t * cy + t*t * ey)
+            for t in (i / 100 for i in range(101))
+        ]
+        outside = any(not ax.bbox.contains(*p) for p in points)
+        hits = sum(any(box.contains(*p) for p in points) for box in blocked_boxes)
+        score = (outside, hits)
+        if score < best_score:
+            best, best_score = curve, score
+        if score == (False, 0):
+            break
+    return best
 
 
 def _draw_panel(ax, graph, positions, taxonomy_roots=(), show_edge_labels=True):
@@ -474,7 +503,28 @@ def _draw_panel(ax, graph, positions, taxonomy_roots=(), show_edge_labels=True):
             )
 
 
-def draw_taxonomy(taxonomy):
+def _route_long_edges(ax, graph, positions):
+    """Route after all panels/legends exist: constrained layout must be final."""
+    boxes = {
+        text.get_text().split("\n")[0]: text.get_bbox_patch().get_window_extent().padded(5)
+        for text in ax.texts if text.get_text().split("\n")[0] in graph
+    }
+    arrows = [p for p in ax.patches if isinstance(p, FancyArrowPatch)]
+    labels = [t for t in ax.texts if t.get_text() == "is_a"]
+    for arrow, label, (u, v) in zip(arrows, labels, graph.edges):
+        if positions[u][1] - positions[v][1] <= 1.5:
+            continue
+        start, end = ax.transData.transform([positions[u], positions[v]])
+        curve = _edge_curve(
+            ax, start, end, [box for n, box in boxes.items() if n not in (u, v)],
+            1 if positions[v][0] <= positions[u][0] else -1,
+        )
+        arrow.set_connectionstyle(f"arc3,rad={curve}")
+        middle = (start + end) / 2 + curve / 2 * (end - start)[::-1] * [1, -1]
+        label.set_position(ax.transData.inverted().transform(middle))
+
+
+def draw_taxonomy(taxonomy, title=None):
     """Largest component plus all remaining components and isolates."""
     components = sorted(
         (c for c in nx.weakly_connected_components(taxonomy) if len(c) > 1),
@@ -486,6 +536,7 @@ def draw_taxonomy(taxonomy):
     fig = plt.figure(figsize=(25, 4 * sum(heights)), layout="constrained")
     grid = fig.add_gridspec(len(heights), 4, height_ratios=heights)
     row_offset = 0
+    panels = []
     for i, comp in enumerate(components):
         if i == 0:
             ax = fig.add_subplot(grid[0, :])
@@ -501,7 +552,9 @@ def draw_taxonomy(taxonomy):
             for u in sorted(comp) for v in sorted(taxonomy.successors(u)) if v in comp
         )
         roots = [n for n in graph if graph.in_degree(n) == 0]
-        _draw_panel(ax, graph, layered_positions(graph), roots)
+        positions = layered_positions(graph)
+        _draw_panel(ax, graph, positions, roots)
+        panels.append((ax, graph, positions))
         ax.set_title(f"K{i + 1:02d} · {len(comp)} узлов · корней в снимке: {len(roots)}", fontsize=11)
     if isolates:
         ax = fig.add_subplot(grid[len(heights) - 1, :])
@@ -510,8 +563,10 @@ def draw_taxonomy(taxonomy):
         _draw_panel(ax, graph, {n: (i, 0) for i, n in enumerate(isolates)}, isolates)
         ax.set_title("Изолированные узлы снимка: все сохранены, гиперонимы не добавлены", fontsize=11)
     fig.suptitle(
-        f"HA2 · таксономия: {len(taxonomy)} узлов, {taxonomy.number_of_edges()} рёбер\n"
-        "Все стрелки is_a: родитель → потомок. Вертикальный ранг = максимальная глубина.",
+        title or (
+            f"HA2 · таксономия: {len(taxonomy)} узлов, {taxonomy.number_of_edges()} рёбер\n"
+            "Все стрелки is_a: родитель → потомок. Вертикальный ранг = максимальная глубина."
+        ),
         fontsize=17,
     )
     fig.legend(handles=[
@@ -520,6 +575,9 @@ def draw_taxonomy(taxonomy):
         Patch(facecolor="white", edgecolor=ROOT_COLOR, label="Корень только в текущем снимке"),
         Line2D([0], [0], color=RELATION_COLORS["is_a"], label="is_a: родитель → потомок"),
     ], loc="outside lower center", ncols=4, frameon=False)
+    fig.canvas.draw()
+    for panel in panels:
+        _route_long_edges(*panel)
     return fig
 
 
@@ -557,14 +615,23 @@ def draw_non_taxonomic(full):
     return fig
 
 
+def save_figure(figure, stem):
+    """Deterministic PNG/SVG pair, without timestamps or SVG trailing whitespace."""
+    stem = Path(stem)
+    stem.parent.mkdir(parents=True, exist_ok=True)
+    for suffix in ("png", "svg"):
+        path = stem.with_suffix("." + suffix)
+        with plt.rc_context({"svg.hashsalt": "ha2-role3"}):
+            figure.savefig(path, dpi=160, bbox_inches="tight",
+                           metadata={"Date": None} if suffix == "svg" else None)
+        if suffix == "svg":
+            path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n",
+                            encoding="utf-8")
+
+
 def save_figures(data_dir, taxonomy_figure, relations_figure):
-    output = Path(data_dir) / "figures"
-    output.mkdir(exist_ok=True)
-    for name, fig in (("taxonomy", taxonomy_figure), ("non_taxonomic", relations_figure)):
-        for suffix in ("png", "svg"):
-            with plt.rc_context({"svg.hashsalt": "ha2-role3"}):
-                fig.savefig(output / f"{name}.{suffix}", dpi=160, bbox_inches="tight",
-                            metadata={"Date": None} if suffix == "svg" else None)
+    for name, figure in (("taxonomy", taxonomy_figure), ("non_taxonomic", relations_figure)):
+        save_figure(figure, Path(data_dir) / "figures" / name)
 
 
 def main():

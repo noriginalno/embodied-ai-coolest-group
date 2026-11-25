@@ -1,0 +1,52 @@
+{
+  "run_kind": "ha1_coverage",
+  "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
+  "baseline_identity_sha256": "497bddb97e40e840b2c164e69cbdd6625b03fbbad43678e71952980a72831780",
+  "baseline_output_sha256": {
+    "specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
+    "specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",
+    "normalization.csv": "409206cdb3a0fbc539a5edb2765f8548943d5d0b47f9bbdc9271b57954a814af",
+    "direction_audit.csv": "396c019c6d33090ae5557746aa2100633368d9467f3fdd3626dafdad0f61b4bf",
+    "node_attributes.csv": "9aacde1d35e5788f3f98f95eb2d795d45d8a945c538dba2f7240b9d90def2653",
+    "typed_graph.json": "925be278c1be278e61d655cbca50ae1f02ba3629c9cc82afa8aa0140b93328b6",
+    "taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
+    "validation.json": "1e290be9e4ef1e1cf27e354a026f2e610c9a01f4f00b9e7b411cabaac0bc8033"
+  },
+  "coverage_code_sha256": "bb8b2be3c2bf18305d65475dce61cd27e6d4232e931d0513e445acf1b1b6b9e8",
+  "input_sha256": {
+    "raw/Concepts_hw2.csv": "86a0ab7bed479952c1716b6b15e978a6323299058056b43321afd4c222b27955",
+    "nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "results/specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013"
+  },
+  "method": {
+    "C": "sum of seven source ratings; each in {0,1,2}",
+    "S": "baseline depth_min; isolated nodes masked",
+    "normalization": "separate min-max over targets; missing S excluded",
+    "threshold": 0.5,
+    "minimum_per_quadrant": 3,
+    "equality_at_threshold": "plus"
+  },
+  "HA1_method_reference": {
+    "path": "HomeAssignment/HA1_submission/HA1_C_S_analysis.ipynb",
+    "cells_zero_based": [
+      1,
+      6,
+      8,
+      11,
+      12
+    ],
+    "sha256": "0f1df9db7dd57f651f5bcb21e53ce1a294421139c467d709914c9b2156966f06"
+  },
+  "output_sha256": {
+    "quadrant_coverage.csv": "ea7f78359c8b8d014eded0a889cc0b2f693aa83961b345d24a60c913fe367a07",
+    "quadrant_counts.csv": "c6e8f96b26ea4f454532e2ebb08b1d131ee8ada8bd8ba3fb936050dccaa1459a",
+    "quadrant_coverage_social0.csv": "52981d434feacbc374139dd396be3c0cacb8ea1b2fcd5bca429e5afff3e42f73",
+    "quadrant_counts_social0.csv": "870323513370208210c16b87e2a14797e9ae23703cfad5fda5a1b5ccd2dea94d",
+    "sensitivity_comparison.csv": "688bef28ebf465d44f984692bb6d4f8c353a8e0af9a4f8b1a9294da9c7566833",
+    "normalization.csv": "aa84e2ee16a7d1f12b91192842377193c7a2c2cd0e064dc3722ab7f7b3790946",
+    "feature_coverage.csv": "f394568dfcbb22418bda8057e37f81117a25e1220d025cd9866e60c550d92619",
+    "requirements.json": "ee49553dc98f92533b3c4676cf4e99b7215cd2d2ce7679e88c895c1d9c4e1fb1"
+  },
+  "perturbation_performed": false
+}

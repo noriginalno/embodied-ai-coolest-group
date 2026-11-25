@@ -1,54 +1,42 @@
-source,relation,target,provenance,confidence,justification
-C18,is_a,C01,wordnet,medium,Лист Edges роли 1 указывает «место» как гипероним для «точка».
-C18,is_a,C02,wordnet,medium,Лист Edges роли 1 указывает «место» как гипероним для «поверхность».
-A02,is_a,C03,wordnet,medium,Лист Edges роли 1 указывает «ЛИНИЯ ЧЕРТА» как гипероним для «граница».
-A03,is_a,C04,wordnet,medium,Лист Edges роли 1 указывает «КОЛИЧЕСТВО ВЕЛИЧИНА ЧИСЛО» как гипероним для «расстояние».
-C04,is_a,C05,wordnet,medium,Лист Edges роли 1 указывает «расстояние» как гипероним для «высота».
-C18,is_a,C06,wordnet,medium,Лист Edges роли 1 указывает «место» как гипероним для «направление».
-C06,is_a,C07,wordnet,medium,Лист Edges роли 1 указывает «направление» как гипероним для «путь».
-C18,is_a,C08,wordnet,medium,Лист Edges роли 1 указывает «место» как гипероним для «вместилище».
-C18,is_a,C09,wordnet,medium,Лист Edges роли 1 указывает «место» как гипероним для «отверстие».
-A12,is_a,C13,wordnet,medium,Лист Edges роли 1 указывает «ВЕЛИЧИНА» как гипероним для «ширина».
-A13,is_a,C13,wordnet,medium,Лист Edges роли 1 указывает «ЛИНЕЙНЫЙ РАЗМЕР» как гипероним для «ширина».
-A14,is_a,C13,wordnet,medium,Лист Edges роли 1 указывает «ПРОТЯЖЕНИЕ» как гипероним для «ширина».
-A15,is_a,C13,wordnet,medium,Лист Edges роли 1 указывает «ПРОТЯЖЕННОСТЬ» как гипероним для «ширина».
-A16,is_a,C13,wordnet,medium,Лист Edges роли 1 указывает «РАЗМЕР» как гипероним для «ширина».
-A12,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «ВЕЛИЧИНА» как гипероним для «глубина».
-A13,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «ЛИНЕЙНЫЙ РАЗМЕР» как гипероним для «глубина».
-A14,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «ПРОТЯЖЕНИЕ» как гипероним для «глубина».
-A15,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «ПРОТЯЖЕННОСТЬ» как гипероним для «глубина».
-A16,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «РАЗМЕР» как гипероним для «глубина».
-A17,is_a,C14,wordnet,medium,Лист Edges роли 1 указывает «ДИСТАНЦИЯ» как гипероним для «глубина».
-C01,is_a,C15,wordnet,medium,Лист Edges роли 1 указывает «точка» как гипероним для «центр».
-A06,is_a,C16,wordnet,medium,Лист Edges роли 1 указывает «ГЕОМЕТРИЧЕСКАЯ ФИГУРА» как гипероним для «угол».
-A07,is_a,C16,wordnet,medium,Лист Edges роли 1 указывает «ФИГУРА» как гипероним для «угол».
-A04,is_a,C17,wordnet,medium,Лист Edges роли 1 указывает «ФИЗИЧЕСКАЯ СУЩНОСТЬ» как гипероним для «пространство».
-A05,is_a,C17,wordnet,medium,Лист Edges роли 1 указывает «ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ» как гипероним для «пространство».
-A04,is_a,C18,wordnet,medium,Лист Edges роли 1 указывает «ФИЗИЧЕСКАЯ СУЩНОСТЬ» как гипероним для «место».
-A05,is_a,C18,wordnet,medium,Лист Edges роли 1 указывает «ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ» как гипероним для «место».
-A26,is_a,C19,wordnet,medium,Лист Edges роли 1 указывает «МЕСТОНАХОЖДЕНИЕ НАХОЖДЕНИЕ ПРЕБЫВАНИЕ» как гипероним для «положение».
-A09,is_a,C20,wordnet,medium,Лист Edges роли 1 указывает «ЧИСЛО» как гипероним для «координата».
-A10,is_a,C22,wordnet,medium,Лист Edges роли 1 указывает «КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР» как гипероним для «площадь».
-A11,is_a,C22,wordnet,medium,Лист Edges роли 1 указывает «ПАРАМЕТР» как гипероним для «площадь».
-A10,is_a,C23,wordnet,medium,Лист Edges роли 1 указывает «КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР» как гипероним для «объём».
-A11,is_a,C23,wordnet,medium,Лист Edges роли 1 указывает «ПАРАМЕТР» как гипероним для «объём».
-A19,is_a,C24,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК» как гипероним для «радиус».
-A20,is_a,C24,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ» как гипероним для «радиус».
-A21,is_a,C24,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ ЛИНИИ» как гипероним для «радиус».
-A22,is_a,C24,wordnet,medium,Лист Edges роли 1 указывает «СЕГМЕНТ» как гипероним для «радиус».
-A23,is_a,C24,wordnet,medium,Лист Edges роли 1 указывает «СЕГМЕНТ ПРЯМОЙ ЛИНИИ» как гипероним для «радиус».
-A19,is_a,C25,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК» как гипероним для «диаметр».
-A20,is_a,C25,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ» как гипероним для «диаметр».
-A21,is_a,C25,wordnet,medium,Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ ЛИНИИ» как гипероним для «диаметр».
-A22,is_a,C25,wordnet,medium,Лист Edges роли 1 указывает «СЕГМЕНТ» как гипероним для «диаметр».
-A23,is_a,C25,wordnet,medium,Лист Edges роли 1 указывает «СЕГМЕНТ ПРЯМОЙ ЛИНИИ» как гипероним для «диаметр».
-HA1:153782-N,is_a,A04,wordnet,medium,Путь HA1 RuWordNet: 153782-N -> 147134-N.
-HA1:106768-N,is_a,A03,wordnet,medium,Путь HA1 RuWordNet: 106768-N -> 106515-N.
-HA1:146671-N,is_a,HA1:106768-N,wordnet,medium,Путь HA1 RuWordNet: 146671-N -> 106768-N.
-HA1:153782-N,is_a,HA1:146671-N,wordnet,medium,Путь HA1 RuWordNet: 153782-N -> 146671-N.
-HA1:149355-N,is_a,A02,wordnet,medium,Путь HA1 RuWordNet: 149355-N -> 106582-N.
-HA1:106581-N,is_a,HA1:149355-N,wordnet,medium,Путь HA1 RuWordNet: 106581-N -> 149355-N.
-HA1:106509-N,is_a,HA1:106581-N,wordnet,medium,Путь HA1 RuWordNet: 106509-N -> 106581-N.
-C20,specifies_location_of,C01,manual,high,Координата задаёт положение точки по оси выбранной системы координат.
-C07,has_endpoint,C18,manual,high,Маршрут связывает исходное и конечное места.
-C25,passes_through,C15,manual,high,Диаметр круга или шара проходит через его центр.
+source,relation,target,provenance,confidence,justification,source_provenance
+A01,is_a,A02,wordnet,high,153782-N -> 146671-N in the supplied RuWordNet edge chain.,RuWordNet
+A01,is_a,A05,wordnet,high,153782-N -> 147134-N in the supplied RuWordNet edge chain.,RuWordNet
+A02,is_a,A03,wordnet,high,146671-N -> 106768-N in the supplied RuWordNet edge chain.,RuWordNet
+A03,is_a,A04,wordnet,high,106768-N -> 106515-N in the supplied RuWordNet edge chain.,RuWordNet
+A05,is_a,C12,wordnet,medium,Physical entity is recorded as the hypernym of the selected space sense; child identified by ILI i35583.,RuWordNet extraction
+A05,is_a,C13,wordnet,medium,Physical entity is recorded as the hypernym of place in space (106451-N).,RuWordNet/HA1
+C13,is_a,C01,wordnet,high,106451-N -> 120377-N.,RuWordNet
+C13,is_a,C02,wordnet,high,106451-N -> 107133-N.,RuWordNet
+C13,is_a,C06,wordnet,high,106451-N -> 106586-N.,RuWordNet
+C13,is_a,C08,wordnet,high,106451-N -> 107038-N.,RuWordNet
+C13,is_a,C09,wordnet,high,106451-N -> 107087-N.,RuWordNet
+C06,is_a,C07,wordnet,high,106586-N -> 183-N.,RuWordNet
+A06,is_a,C03,wordnet,high,106582-N -> 106514-N.,RuWordNet
+A04,is_a,C04,wordnet,high,106515-N -> 106757-N.,RuWordNet
+C04,is_a,C05,wordnet,high,106757-N -> 106758-N.,RuWordNet
+A07,is_a,C10,wordnet,medium,«Величина» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.,RuWordNet page
+A07,is_a,C11,wordnet,medium,«Величина» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.,RuWordNet page
+A08,is_a,C10,wordnet,medium,«Линейный размер» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.,RuWordNet page
+A08,is_a,C11,wordnet,medium,«Линейный размер» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.,RuWordNet page
+C12,is_a,C14,wordnet,high,The selected spatial cavity sense has direct hypernym space (ILI i110049).,RuWordNet
+C14,is_a,C15,wordnet,high,«Пещера» is listed as a hyponym of the selected spatial «полость» sense (ILI i85180).,RuWordNet
+C14,is_a,C16,wordnet,medium,«Каверна» sense 2 (rock cavity) is listed in the spatial cavity branch; sense 1 is excluded.,RuWordNet
+C10,is_a,C17,wordnet,medium,Width is listed among the hypernym labels for «поперечник»; direction is parent -> child.,RuWordNet page
+C01,is_a,C18,wordnet,medium,"The selected sense is «центр, центральная точка»; the source lists «точка пространства» as its hypernym.",RuWordNet
+A09,is_a,C19,wordnet,medium,«Геометрическая фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.,RuWordNet page
+A10,is_a,C19,wordnet,medium,«Фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.,RuWordNet page
+A11,is_a,C20,wordnet,medium,«Количественный параметр» is listed as a hypernym of area-as-parameter; source ID not captured.,RuWordNet page
+A12,is_a,C20,wordnet,medium,«Параметр» is listed as a hypernym of area-as-parameter; source ID not captured.,RuWordNet page
+A11,is_a,C21,wordnet,medium,«Количественный параметр» is listed as a hypernym of spatial volume; source ID not captured.,RuWordNet page
+A12,is_a,C21,wordnet,medium,«Параметр» is listed as a hypernym of spatial volume; source ID not captured.,RuWordNet page
+A13,is_a,C22,wordnet,medium,The checked spatial-nearness sense (ILI i63721) lists «малость» among its hypernyms; this branch is retained as sourced and not merged into the physical-place branch.,RuWordNet page
+A14,is_a,C23,wordnet,medium,"«Определение местонахождения» is listed among the hypernyms of echolocation; it is a process branch, not the physical-space entity branch.",RuWordNet page
+A15,is_a,C24,wordnet,medium,«Физическое самочувствие» is listed as a hypernym of dizziness (ILI i112532).,RuWordNet page
+A16,is_a,C24,wordnet,medium,«Физическое состояние» is listed as a hypernym of dizziness (ILI i112532).,RuWordNet page
+A17,is_a,C25,wordnet,medium,«Выяснение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.,RuWordNet page
+A18,is_a,C25,wordnet,medium,«Определение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.,RuWordNet page
+A19,is_a,C25,wordnet,medium,«Установление» is listed among the hypernyms of the selected orientation sense; source ILI i109572.,RuWordNet page
+C22,describes_relative_proximity_between,C13,manual,low,«Близость» denotes nearness between places/objects; this association is not an is_a relation.,manual
+C23,used_for_localization_of,C13,manual,medium,The checked gloss defines echolocation as a method for determining an object’s location using returning echoes.,RuWordNet gloss/manual
+C24,affects_perceived_orientation,C25,manual,medium,"A dizziness sensation can affect perceived spatial orientation; this is a semantic association, not a taxonomic claim.",manual
+C25,orients_relative_to,C06,manual,medium,The selected orientation sense is alignment relative to directions; RuWordNet also lists «направление» among associated concepts.,RuWordNet association/manual

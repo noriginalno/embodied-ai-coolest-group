@@ -1,6 +1,11 @@
 {
-  "source_commit": "5ca95838c2b38ae84cf26a23cdb1cf9be71ac4b6",
+  "run_kind": "baseline",
+  "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
+  "source_commit_role": "raw input snapshot; processing code is identified by code_sha256",
   "python": "3.13.6",
+  "node_count": 44,
+  "target_count": 25,
+  "typed_edge_count": 41,
   "packages": {
     "numpy": "2.5.5",
     "pandas": "3.1.1",
@@ -11,18 +16,43 @@
     "ipykernel": "7.4.0"
   },
   "input_sha256": {
-    "HomeAssignment/HA2/nodes.csv": "bdd36b5501e0fd3e0bd379e94462557a351b313cbd590539ee08bd893760c630",
-    "HomeAssignment/HA2/edges.csv": "eed3f35dec834c0ef76ec8badbf468c6e76ccedf3adf2f27114fe0f339b9517a",
-    "HomeAssignment/HA2/pos_annotations.csv": "8c0c345ff5d4c001dd4134d6d29190422941695277d8264bab85be0ea1a00166",
-    "HomeAssignment/HA2/raw/Concepts_hw2.csv": "b1143470e8d8f7be3713f14466e5a21fe22dc8fbdd79697e989939c41378bd88",
-    "HomeAssignment/HA2/raw/Edges.csv": "da8a378360688d843eeeb99b3507da395fa15e44f74e9c1b394cac58e5afd187",
-    "HomeAssignment/HA2/ha2_analysis.py": "9678b7abf6e32315ca39e84cd04cac15a9362c8fd86dd2d6c0bd5a6f2936c0ad",
-    "HomeAssignment/HA1_submission/data/ruwordnet_edges.csv": "82c690fc0bde7b8ac6b11788af29950db3d265f659aec4f16afa558bb32fbc94",
+    "nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "pos_annotations.csv": "06e19f05aee88aa72559fdf6f97e2de2f666947ad40120bbb0aa33a43101e942",
+    "raw/Nodes.csv": "31a925d0f1fe6e921da70bc7ef22046c4d4a76438ff056c3a496e2208380175b",
+    "raw/Concepts_hw2.csv": "86a0ab7bed479952c1716b6b15e978a6323299058056b43321afd4c222b27955",
+    "raw/Edges.csv": "52e97b9afdfdacf7e7f99b4d89ff55886f33e1f750f5f06ac8244749de5693fb",
+    "raw/Sources.csv": "3458308a4e74548ab43dfc53b12ffe8766bee15a5aced663b9d1ccbb19b802f4",
+    "prepared_inputs.json": "c02990af4236e9bbf62b720773faa87a82ae3cb9ed7f1c9ca7fb63bb3ee6c531",
+    "requirements.txt": "35d4779ab3a9234e4389ccdb3ee6a82e7c548a2aed91f5f6067b826107a56968"
+  },
+  "input_paths_relative_to": "data_dir",
+  "code_sha256": {
+    "ha2_analysis.py": "4e0e28ad7958b29b2fe70f0d7b06c453520e6632a90ed54dd100b433da2bc118",
+    "sync.py": "7cdda9af422116bdc17015035ce9d2084e500c247aaf39dd8be63314d8b81309"
+  },
+  "notebook_source_sha256": "30343db644cbb272f1c31872cf38f5d1b1e6391747e44b7c15c24a86dbcc6768",
+  "reference_sha256": {
     "Seminars/Class03/Class_03_Instructor_Working_Notebook.ipynb": "9903c42755b148b608153a17dca75d8e3b56614b351ea33395b7457ac7048d49",
     "Seminars/Class03/Class_03_Semantic_Networks_Lecture_and_Seminar_Expanded_Lecture.pptx": "4b3b6c80365c7789853620a21f302e3afee7f4abff098c9477338788881b75c8"
   },
+  "baseline_output_sha256": {
+    "specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
+    "specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",
+    "normalization.csv": "409206cdb3a0fbc539a5edb2765f8548943d5d0b47f9bbdc9271b57954a814af",
+    "direction_audit.csv": "396c019c6d33090ae5557746aa2100633368d9467f3fdd3626dafdad0f61b4bf",
+    "node_attributes.csv": "9aacde1d35e5788f3f98f95eb2d795d45d8a945c538dba2f7240b9d90def2653",
+    "typed_graph.json": "925be278c1be278e61d655cbca50ae1f02ba3629c9cc82afa8aa0140b93328b6",
+    "taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
+    "validation.json": "1e290be9e4ef1e1cf27e354a026f2e610c9a01f4f00b9e7b411cabaac0bc8033"
+  },
   "primary_normalization": "global over all supplied nodes, not separately by component",
   "normalization_constants": "normalization.csv",
+  "coverage_status": "computed",
+  "perturbation_status": "computed",
+  "legacy_role4_outputs": "results/role4 belongs to the previous input snapshot",
   "interpretation_written": false,
-  "perturbation_performed": false
+  "perturbation_performed": true,
+  "coverage_manifest": "ha1_coverage/run_manifest.json",
+  "perturbation_manifest": "perturbation/run_manifest.json"
 }

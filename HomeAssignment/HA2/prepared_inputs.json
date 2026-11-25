@@ -1,0 +1,39 @@
+{
+  "input_format_version": 2,
+  "source_snapshot_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
+  "node_count": 44,
+  "target_count": 25,
+  "edge_count": 41,
+  "relation_counts": {
+    "is_a": 37,
+    "describes_relative_proximity_between": 1,
+    "used_for_localization_of": 1,
+    "affects_perceived_orientation": 1,
+    "orients_relative_to": 1
+  },
+  "provenance_counts": {
+    "wordnet": 37,
+    "manual": 4
+  },
+  "POS_counts": {
+    "NOUN": 44
+  },
+  "POS_provenance_counts": {
+    "wordnet:source_id_suffix": 16,
+    "manual:pos_annotations.csv": 28
+  },
+  "input_sha256": {
+    "raw/Nodes.csv": "31a925d0f1fe6e921da70bc7ef22046c4d4a76438ff056c3a496e2208380175b",
+    "raw/Edges.csv": "52e97b9afdfdacf7e7f99b4d89ff55886f33e1f750f5f06ac8244749de5693fb",
+    "raw/Concepts_hw2.csv": "86a0ab7bed479952c1716b6b15e978a6323299058056b43321afd4c222b27955",
+    "raw/Sources.csv": "3458308a4e74548ab43dfc53b12ffe8766bee15a5aced663b9d1ccbb19b802f4",
+    "pos_annotations.csv": "06e19f05aee88aa72559fdf6f97e2de2f666947ad40120bbb0aa33a43101e942"
+  },
+  "prepared_sha256": {
+    "nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "excluded_edges.csv": "36b14abc3ca17c23d69254be000d4148b1822f909bb97c6037c86a1f51e9509f"
+  },
+  "import_code_sha256": "7cdda9af422116bdc17015035ce9d2084e500c247aaf39dd8be63314d8b81309",
+  "downstream_results_status": "see results/run_manifest.json; importer does not calculate S"
+}

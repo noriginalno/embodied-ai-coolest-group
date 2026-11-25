@@ -1,0 +1,265 @@
+node_id,label,is_target,from,to,metric,S_from,S_to,delta,abs_delta,raw_from,raw_to,denominator_from,denominator_to,delta_structure_from_scale,delta_normalization,exceeds_threshold
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_add,S_depth,0.4,0.4,0,0,2,2,5,5,0,0,False
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A07,ВЕЛИЧИНА,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_add,S_depth,0,0.8,0.8,0.8,0,4,5,5,0.8,0,True
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A10,ФИГУРА,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A12,ПАРАМЕТР,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A13,МАЛОСТЬ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A17,ВЫЯСНЕНИЕ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+A19,УСТАНОВЛЕНИЕ,FALSE,baseline,after_add,S_depth,0,0,0,0,0,0,5,5,0,0,False
+C01,точка,TRUE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+C02,поверхность,TRUE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+C03,граница,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C04,расстояние,TRUE,baseline,after_add,S_depth,0.8,0.8,0,0,4,4,5,5,0,0,False
+C05,высота,TRUE,baseline,after_add,S_depth,1,1,0,0,5,5,5,5,0,0,False
+C06,направление,TRUE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+C07,путь,TRUE,baseline,after_add,S_depth,0.8,0.8,0,0,4,4,5,5,0,0,False
+C08,вместилище,TRUE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+C09,отверстие,TRUE,baseline,after_add,S_depth,0.6,0.6,0,0,3,3,5,5,0,0,False
+C10,ширина,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C11,глубина,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C12,пространство,TRUE,baseline,after_add,S_depth,0.4,0.4,0,0,2,2,5,5,0,0,False
+C13,место,TRUE,baseline,after_add,S_depth,0.4,0.4,0,0,2,2,5,5,0,0,False
+C14,полость,TRUE,baseline,after_add,S_depth,0.6,0.4,-0.2,0.2,3,2,5,5,-0.2,0,True
+C15,пещера,TRUE,baseline,after_add,S_depth,0.8,0.6,-0.2,0.2,4,3,5,5,-0.2,0,True
+C16,каверна,TRUE,baseline,after_add,S_depth,0.8,0.6,-0.2,0.2,4,3,5,5,-0.2,0,True
+C17,поперечник,TRUE,baseline,after_add,S_depth,0.4,0.4,0,0,2,2,5,5,0,0,False
+C18,центр,TRUE,baseline,after_add,S_depth,0.8,0.8,0,0,4,4,5,5,0,0,False
+C19,угол,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C20,площадь,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C21,объём,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C22,близость,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C23,эхолокация,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C24,головокружение,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+C25,ориентация,TRUE,baseline,after_add,S_depth,0.2,0.2,0,0,1,1,5,5,0,0,False
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_breadth,0,0,0,0,18,22,2.94443897916644,3.13549421592915,-0.064886804622046,0.064886804622046,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_breadth,0.453397430267098,0.299241387155578,-0.15415604311152,0.15415604311152,4,8,2.94443897916644,3.13549421592915,-0.199626030310372,0.045469987198852,True
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_add,S_breadth,0.529182173266723,0.336805811627489,-0.192376361639235,0.192376361639235,3,7,2.94443897916644,3.13549421592915,-0.235408913366638,0.0430325517274035,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_add,S_breadth,0.626885699978363,0.379392843664144,-0.247492856314219,0.247492856314219,2,6,2.94443897916644,3.13549421592915,-0.287762071614427,0.0402692153002082,True
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_breadth,0.128883506973656,0.181963294835338,0.0530797878616817,0.0530797878616817,12,12,2.94443897916644,3.13549421592915,-0,0.0530797878616816,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A07,ВЕЛИЧИНА,FALSE,baseline,after_add,S_breadth,0.529182173266723,0.557870541084992,0.028688367818269,0.028688367818269,3,3,2.94443897916644,3.13549421592915,-0,0.028688367818269,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_add,S_breadth,0.529182173266723,0.557870541084992,0.028688367818269,0.028688367818269,3,3,2.94443897916644,3.13549421592915,-0,0.028688367818269,False
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A10,ФИГУРА,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,baseline,after_add,S_breadth,0.626885699978363,0.649620693577789,0.0227349935994261,0.0227349935994261,2,2,2.94443897916644,3.13549421592915,-0,0.022734993599426,False
+A12,ПАРАМЕТР,FALSE,baseline,after_add,S_breadth,0.626885699978363,0.649620693577789,0.0227349935994261,0.0227349935994261,2,2,2.94443897916644,3.13549421592915,-0,0.022734993599426,False
+A13,МАЛОСТЬ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A17,ВЫЯСНЕНИЕ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+A19,УСТАНОВЛЕНИЕ,FALSE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+C01,точка,TRUE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+C02,поверхность,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C03,граница,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C04,расстояние,TRUE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+C05,высота,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C06,направление,TRUE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+C07,путь,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C08,вместилище,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C09,отверстие,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C10,ширина,TRUE,baseline,after_add,S_breadth,0.764591086633362,0.778935270542496,0.0143441839091345,0.0143441839091345,1,1,2.94443897916644,3.13549421592915,-0,0.0143441839091345,False
+C11,глубина,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C12,пространство,TRUE,baseline,after_add,S_breadth,0.529182173266723,0.557870541084992,0.028688367818269,0.028688367818269,3,3,2.94443897916644,3.13549421592915,-0,0.028688367818269,False
+C13,место,TRUE,baseline,after_add,S_breadth,0.293773259900085,0.336805811627489,0.0430325517274035,0.0430325517274035,7,7,2.94443897916644,3.13549421592915,-0,0.0430325517274035,False
+C14,полость,TRUE,baseline,after_add,S_breadth,0.626885699978363,0.649620693577789,0.0227349935994261,0.0227349935994261,2,2,2.94443897916644,3.13549421592915,-0,0.022734993599426,False
+C15,пещера,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C16,каверна,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C17,поперечник,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C18,центр,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C19,угол,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C20,площадь,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C21,объём,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C22,близость,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C23,эхолокация,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C24,головокружение,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+C25,ориентация,TRUE,baseline,after_add,S_breadth,1,1,0,0,0,0,2.94443897916644,3.13549421592915,-0,0,False
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A07,ВЕЛИЧИНА,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_remove,S_depth,0,1,1,1,0,4,5,4,0.8,0.2,True
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A10,ФИГУРА,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A12,ПАРАМЕТР,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A13,МАЛОСТЬ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A17,ВЫЯСНЕНИЕ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A19,УСТАНОВЛЕНИЕ,FALSE,baseline,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+C01,точка,TRUE,baseline,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C02,поверхность,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C03,граница,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C04,расстояние,TRUE,baseline,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C05,высота,TRUE,baseline,after_remove,S_depth,1,0,-1,1,5,0,5,4,-1,0,True
+C06,направление,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C07,путь,TRUE,baseline,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C08,вместилище,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C09,отверстие,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C10,ширина,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C11,глубина,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C12,пространство,TRUE,baseline,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C13,место,TRUE,baseline,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C14,полость,TRUE,baseline,after_remove,S_depth,0.6,0.5,-0.1,0.1,3,2,5,4,-0.2,0.1,False
+C15,пещера,TRUE,baseline,after_remove,S_depth,0.8,0.75,-0.05,0.05,4,3,5,4,-0.2,0.15,False
+C16,каверна,TRUE,baseline,after_remove,S_depth,0.8,0,-0.8,0.8,4,0,5,4,-0.8,0,True
+C17,поперечник,TRUE,baseline,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C18,центр,TRUE,baseline,after_remove,S_depth,0.8,0.25,-0.55,0.55,4,1,5,4,-0.6,0.05,True
+C19,угол,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C20,площадь,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C21,объём,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C22,близость,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C23,эхолокация,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C24,головокружение,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C25,ориентация,TRUE,baseline,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,0,0,0,0,18,18,2.94443897916644,2.94443897916644,-0,-0,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,0.453397430267098,0.293773259900085,-0.159624170367012,0.159624170367012,4,7,2.94443897916644,2.94443897916644,-0.159624170367012,-0,True
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_remove,S_breadth,0.529182173266723,0.339123628363936,-0.190058544902787,0.190058544902787,3,6,2.94443897916644,2.94443897916644,-0.190058544902788,-0,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_remove,S_breadth,0.626885699978363,0.391476786611725,-0.235408913366638,0.235408913366638,2,5,2.94443897916644,2.94443897916644,-0.235408913366638,-0,True
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,0.128883506973656,0.217988516900459,0.0891050099268028,0.0891050099268028,12,9,2.94443897916644,2.94443897916644,0.0891050099268028,-0,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A07,ВЕЛИЧИНА,FALSE,baseline,after_remove,S_breadth,0.529182173266723,0.529182173266723,0,0,3,3,2.94443897916644,2.94443897916644,-0,-0,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_remove,S_breadth,0.529182173266723,0.529182173266723,0,0,3,3,2.94443897916644,2.94443897916644,-0,-0,False
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A10,ФИГУРА,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,baseline,after_remove,S_breadth,0.626885699978363,0.626885699978363,0,0,2,2,2.94443897916644,2.94443897916644,-0,-0,False
+A12,ПАРАМЕТР,FALSE,baseline,after_remove,S_breadth,0.626885699978363,0.626885699978363,0,0,2,2,2.94443897916644,2.94443897916644,-0,-0,False
+A13,МАЛОСТЬ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A17,ВЫЯСНЕНИЕ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+A19,УСТАНОВЛЕНИЕ,FALSE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+C01,точка,TRUE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+C02,поверхность,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C03,граница,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C04,расстояние,TRUE,baseline,after_remove,S_breadth,0.764591086633362,1,0.235408913366638,0.235408913366638,1,0,2.94443897916644,2.94443897916644,0.235408913366638,-0,True
+C05,высота,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C06,направление,TRUE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+C07,путь,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C08,вместилище,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C09,отверстие,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C10,ширина,TRUE,baseline,after_remove,S_breadth,0.764591086633362,0.764591086633362,0,0,1,1,2.94443897916644,2.94443897916644,-0,-0,False
+C11,глубина,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C12,пространство,TRUE,baseline,after_remove,S_breadth,0.529182173266723,0.626885699978363,0.0977035267116395,0.0977035267116395,3,2,2.94443897916644,2.94443897916644,0.0977035267116395,-0,False
+C13,место,TRUE,baseline,after_remove,S_breadth,0.293773259900085,0.391476786611725,0.0977035267116395,0.0977035267116395,7,5,2.94443897916644,2.94443897916644,0.0977035267116395,-0,False
+C14,полость,TRUE,baseline,after_remove,S_breadth,0.626885699978363,0.764591086633362,0.137705386654999,0.137705386654999,2,1,2.94443897916644,2.94443897916644,0.137705386654999,-0,True
+C15,пещера,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C16,каверна,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C17,поперечник,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C18,центр,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C19,угол,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C20,площадь,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C21,объём,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C22,близость,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C23,эхолокация,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C24,головокружение,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+C25,ориентация,TRUE,baseline,after_remove,S_breadth,1,1,0,0,0,0,2.94443897916644,2.94443897916644,-0,-0,False
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,after_add,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A07,ВЕЛИЧИНА,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A10,ФИГУРА,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A12,ПАРАМЕТР,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A13,МАЛОСТЬ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A17,ВЫЯСНЕНИЕ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+A19,УСТАНОВЛЕНИЕ,FALSE,after_add,after_remove,S_depth,0,0,0,0,0,0,5,4,0,0,False
+C01,точка,TRUE,after_add,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C02,поверхность,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C03,граница,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C04,расстояние,TRUE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C05,высота,TRUE,after_add,after_remove,S_depth,1,0,-1,1,5,0,5,4,-1,0,True
+C06,направление,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C07,путь,TRUE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C08,вместилище,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C09,отверстие,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C10,ширина,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C11,глубина,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C12,пространство,TRUE,after_add,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C13,место,TRUE,after_add,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C14,полость,TRUE,after_add,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C15,пещера,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C16,каверна,TRUE,after_add,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C17,поперечник,TRUE,after_add,after_remove,S_depth,0.4,0.5,0.1,0.1,2,2,5,4,0,0.1,False
+C18,центр,TRUE,after_add,after_remove,S_depth,0.8,0.25,-0.55,0.55,4,1,5,4,-0.6,0.05,True
+C19,угол,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C20,площадь,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C21,объём,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C22,близость,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C23,эхолокация,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C24,головокружение,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+C25,ориентация,TRUE,after_add,after_remove,S_depth,0.2,0.25,0.05,0.05,1,1,5,4,0,0.05,False
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_breadth,0,0,0,0,22,18,3.13549421592915,2.94443897916644,0.0609330534855072,-0.0609330534855072,False
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_breadth,0.299241387155578,0.293773259900085,-0.00546812725549273,0.00546812725549273,8,7,3.13549421592915,2.94443897916644,0.0375644244719108,-0.0430325517274035,False
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,after_add,after_remove,S_breadth,0.336805811627489,0.339123628363936,0.00231781673644726,0.00231781673644726,7,6,3.13549421592915,2.94443897916644,0.0425870320366554,-0.0402692153002082,False
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,after_add,after_remove,S_breadth,0.379392843664144,0.391476786611725,0.0120839429475805,0.0120839429475805,6,5,3.13549421592915,2.94443897916644,0.049163120456141,-0.0370791775085605,False
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,FALSE,after_add,after_remove,S_breadth,0.181963294835338,0.217988516900459,0.0360252220651212,0.0360252220651212,12,9,3.13549421592915,2.94443897916644,0.0836755695911063,-0.0476503475259851,False
+A06,"ЛИНИЯ, ЧЕРТА",FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A07,ВЕЛИЧИНА,FALSE,after_add,after_remove,S_breadth,0.557870541084992,0.529182173266723,-0.028688367818269,0.028688367818269,3,3,3.13549421592915,2.94443897916644,-0,-0.028688367818269,False
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,after_add,after_remove,S_breadth,0.557870541084992,0.529182173266723,-0.028688367818269,0.028688367818269,3,3,3.13549421592915,2.94443897916644,-0,-0.028688367818269,False
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A10,ФИГУРА,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,FALSE,after_add,after_remove,S_breadth,0.649620693577789,0.626885699978363,-0.0227349935994261,0.0227349935994261,2,2,3.13549421592915,2.94443897916644,-0,-0.022734993599426,False
+A12,ПАРАМЕТР,FALSE,after_add,after_remove,S_breadth,0.649620693577789,0.626885699978363,-0.0227349935994261,0.0227349935994261,2,2,3.13549421592915,2.94443897916644,-0,-0.022734993599426,False
+A13,МАЛОСТЬ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A17,ВЫЯСНЕНИЕ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A18,ОПРЕДЕЛЕНИЕ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+A19,УСТАНОВЛЕНИЕ,FALSE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+C01,точка,TRUE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+C02,поверхность,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C03,граница,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C04,расстояние,TRUE,after_add,after_remove,S_breadth,0.778935270542496,1,0.221064729457504,0.221064729457504,1,0,3.13549421592915,2.94443897916644,0.221064729457504,-0,True
+C05,высота,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C06,направление,TRUE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+C07,путь,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C08,вместилище,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C09,отверстие,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C10,ширина,TRUE,after_add,after_remove,S_breadth,0.778935270542496,0.764591086633362,-0.0143441839091345,0.0143441839091345,1,1,3.13549421592915,2.94443897916644,-0,-0.0143441839091345,False
+C11,глубина,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C12,пространство,TRUE,after_add,after_remove,S_breadth,0.557870541084992,0.626885699978363,0.0690151588933705,0.0690151588933705,3,2,3.13549421592915,2.94443897916644,0.0917501524927965,-0.022734993599426,False
+C13,место,TRUE,after_add,after_remove,S_breadth,0.336805811627489,0.391476786611725,0.054670974984236,0.054670974984236,7,5,3.13549421592915,2.94443897916644,0.0917501524927965,-0.0370791775085605,False
+C14,полость,TRUE,after_add,after_remove,S_breadth,0.649620693577789,0.764591086633362,0.114970393055573,0.114970393055573,2,1,3.13549421592915,2.94443897916644,0.129314576964707,-0.0143441839091345,True
+C15,пещера,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C16,каверна,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C17,поперечник,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C18,центр,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C19,угол,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C20,площадь,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C21,объём,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C22,близость,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C23,эхолокация,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C24,головокружение,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False
+C25,ориентация,TRUE,after_add,after_remove,S_breadth,1,1,0,0,0,0,3.13549421592915,2.94443897916644,-0,-0,False

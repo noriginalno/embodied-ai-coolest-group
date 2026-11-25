@@ -1,0 +1,7 @@
+from,to,metric,all_nodes_exceeding,target_nodes_exceeding
+baseline,after_add,S_depth,4,3
+baseline,after_add,S_breadth,3,0
+baseline,after_remove,S_depth,12,10
+baseline,after_remove,S_breadth,5,2
+after_add,after_remove,S_depth,13,11
+after_add,after_remove,S_breadth,2,2

@@ -1,0 +1,40 @@
+node_id,label,is_target,from,to,metric,S_from,S_to,delta,abs_delta,raw_from,raw_to,denominator_from,denominator_to,delta_structure_from_scale,delta_normalization,exceeds_threshold
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_add,S_depth,0,0.8,0.8,0.8,0,4,5,5,0.8,0,True
+C14,полость,TRUE,baseline,after_add,S_depth,0.6,0.4,-0.2,0.2,3,2,5,5,-0.2,0,True
+C15,пещера,TRUE,baseline,after_add,S_depth,0.8,0.6,-0.2,0.2,4,3,5,5,-0.2,0,True
+C16,каверна,TRUE,baseline,after_add,S_depth,0.8,0.6,-0.2,0.2,4,3,5,5,-0.2,0,True
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_add,S_breadth,0.453397430267098,0.299241387155578,-0.15415604311152,0.15415604311152,4,8,2.94443897916644,3.13549421592915,-0.199626030310372,0.045469987198852,True
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_add,S_breadth,0.529182173266723,0.336805811627489,-0.192376361639235,0.192376361639235,3,7,2.94443897916644,3.13549421592915,-0.235408913366638,0.0430325517274035,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_add,S_breadth,0.626885699978363,0.379392843664144,-0.247492856314219,0.247492856314219,2,6,2.94443897916644,3.13549421592915,-0.287762071614427,0.0402692153002082,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,baseline,after_remove,S_depth,0,1,1,1,0,4,5,4,0.8,0.2,True
+C01,точка,TRUE,baseline,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C02,поверхность,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C04,расстояние,TRUE,baseline,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C05,высота,TRUE,baseline,after_remove,S_depth,1,0,-1,1,5,0,5,4,-1,0,True
+C06,направление,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C07,путь,TRUE,baseline,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C08,вместилище,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C09,отверстие,TRUE,baseline,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C16,каверна,TRUE,baseline,after_remove,S_depth,0.8,0,-0.8,0.8,4,0,5,4,-0.8,0,True
+C18,центр,TRUE,baseline,after_remove,S_depth,0.8,0.25,-0.55,0.55,4,1,5,4,-0.6,0.05,True
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,FALSE,baseline,after_remove,S_breadth,0.453397430267098,0.293773259900085,-0.159624170367012,0.159624170367012,4,7,2.94443897916644,2.94443897916644,-0.159624170367012,-0,True
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",FALSE,baseline,after_remove,S_breadth,0.529182173266723,0.339123628363936,-0.190058544902787,0.190058544902787,3,6,2.94443897916644,2.94443897916644,-0.190058544902788,-0,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,baseline,after_remove,S_breadth,0.626885699978363,0.391476786611725,-0.235408913366638,0.235408913366638,2,5,2.94443897916644,2.94443897916644,-0.235408913366638,-0,True
+C04,расстояние,TRUE,baseline,after_remove,S_breadth,0.764591086633362,1,0.235408913366638,0.235408913366638,1,0,2.94443897916644,2.94443897916644,0.235408913366638,-0,True
+C14,полость,TRUE,baseline,after_remove,S_breadth,0.626885699978363,0.764591086633362,0.137705386654999,0.137705386654999,2,1,2.94443897916644,2.94443897916644,0.137705386654999,-0,True
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",FALSE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+A08,ЛИНЕЙНЫЙ РАЗМЕР,FALSE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C01,точка,TRUE,after_add,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C02,поверхность,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C04,расстояние,TRUE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C05,высота,TRUE,after_add,after_remove,S_depth,1,0,-1,1,5,0,5,4,-1,0,True
+C06,направление,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C07,путь,TRUE,after_add,after_remove,S_depth,0.8,1,0.2,0.2,4,4,5,4,0,0.2,True
+C08,вместилище,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C09,отверстие,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C15,пещера,TRUE,after_add,after_remove,S_depth,0.6,0.75,0.15,0.15,3,3,5,4,0,0.15,True
+C16,каверна,TRUE,after_add,after_remove,S_depth,0.6,0,-0.6,0.6,3,0,5,4,-0.6,0,True
+C18,центр,TRUE,after_add,after_remove,S_depth,0.8,0.25,-0.55,0.55,4,1,5,4,-0.6,0.05,True
+C04,расстояние,TRUE,after_add,after_remove,S_breadth,0.778935270542496,1,0.221064729457504,0.221064729457504,1,0,3.13549421592915,2.94443897916644,0.221064729457504,-0,True
+C14,полость,TRUE,after_add,after_remove,S_breadth,0.649620693577789,0.764591086633362,0.114970393055573,0.114970393055573,2,1,3.13549421592915,2.94443897916644,0.129314576964707,-0.0143441839091345,True

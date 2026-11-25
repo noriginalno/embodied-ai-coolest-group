@@ -1,0 +1,75 @@
+{
+  "run_kind": "perturbation",
+  "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
+  "baseline_identity_sha256": "ac20a85ef6687cf6c3eea446131e71491526489ce1c5a7175ee9a248c19a7fb2",
+  "baseline_output_sha256": {
+    "specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
+    "specificity_targets.csv": "0541196862b8df962d3f87417b8fa2869373efe9fcbb5824f1de0189f80d877a",
+    "normalization.csv": "409206cdb3a0fbc539a5edb2765f8548943d5d0b47f9bbdc9271b57954a814af",
+    "direction_audit.csv": "396c019c6d33090ae5557746aa2100633368d9467f3fdd3626dafdad0f61b4bf",
+    "node_attributes.csv": "9aacde1d35e5788f3f98f95eb2d795d45d8a945c538dba2f7240b9d90def2653",
+    "typed_graph.json": "925be278c1be278e61d655cbca50ae1f02ba3629c9cc82afa8aa0140b93328b6",
+    "taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
+    "validation.json": "1e290be9e4ef1e1cf27e354a026f2e610c9a01f4f00b9e7b411cabaac0bc8033"
+  },
+  "input_sha256": {
+    "nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "pos_annotations.csv": "06e19f05aee88aa72559fdf6f97e2de2f666947ad40120bbb0aa33a43101e942",
+    "raw/Nodes.csv": "31a925d0f1fe6e921da70bc7ef22046c4d4a76438ff056c3a496e2208380175b",
+    "raw/Concepts_hw2.csv": "86a0ab7bed479952c1716b6b15e978a6323299058056b43321afd4c222b27955",
+    "raw/Edges.csv": "52e97b9afdfdacf7e7f99b4d89ff55886f33e1f750f5f06ac8244749de5693fb",
+    "raw/Sources.csv": "3458308a4e74548ab43dfc53b12ffe8766bee15a5aced663b9d1ccbb19b802f4",
+    "prepared_inputs.json": "c02990af4236e9bbf62b720773faa87a82ae3cb9ed7f1c9ca7fb63bb3ee6c531",
+    "requirements.txt": "35d4779ab3a9234e4389ccdb3ee6a82e7c548a2aed91f5f6067b826107a56968"
+  },
+  "code_sha256": {
+    "ha2_analysis.py": "e7b22783ae842029cc14557abeaf0e60c986a10bff1f689922e54ecab4c31b8d",
+    "sync.py": "7cdda9af422116bdc17015035ce9d2084e500c247aaf39dd8be63314d8b81309",
+    "ha2_coverage.py": "118953126809f9a44ea1f9c9831cda4e2a30b2c038ce5df2619e60bf5b51eaea",
+    "ha2_perturbation.py": "c3948218ed9810269e1eb6238483f35fea8bb5c280d3e3e6b2a69ebb3a570308"
+  },
+  "python": "3.13.6",
+  "packages": {
+    "pandas": "3.1.1",
+    "networkx": "3.7"
+  },
+  "scenario": "scenario.json",
+  "saved_baseline_sha256": {
+    "baseline_nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "baseline_edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "baseline_graph.json": "925be278c1be278e61d655cbca50ae1f02ba3629c9cc82afa8aa0140b93328b6",
+    "baseline_taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
+    "baseline_specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
+    "baseline_normalization.csv": "409206cdb3a0fbc539a5edb2765f8548943d5d0b47f9bbdc9271b57954a814af"
+  },
+  "baseline_preserved": true,
+  "source_inputs_modified": false,
+  "non_taxonomic_control_passed_all_states": true,
+  "interpretation_written": false,
+  "output_sha256": {
+    "baseline_nodes.csv": "766353834c86d7951df33d4c8b02d844e93458fa4f837629a19cb107d46084f5",
+    "baseline_edges.csv": "b5f6c743071e101fc09ccc9fcf0d0f0f7c4334eaeb25dce05799f0c75cf89974",
+    "baseline_graph.json": "925be278c1be278e61d655cbca50ae1f02ba3629c9cc82afa8aa0140b93328b6",
+    "baseline_taxonomy_graph.json": "f6241a06a5ce1ac1cfde4c994f7895c357a1b6320974e89bbb05a9af277dab39",
+    "baseline_specificity.csv": "aa82b8dab2c4af860fc9aab9ac541f525e0ad017548e3468f5866356d743f013",
+    "baseline_normalization.csv": "409206cdb3a0fbc539a5edb2765f8548943d5d0b47f9bbdc9271b57954a814af",
+    "after_add_edges.csv": "b9e51bbf5d184fcf02c9c576ff2c7da795820372e1c492281008d21920eeb680",
+    "after_add_specificity.csv": "40ca44fe93663724de5ab57492845b4fe726f1e5af27af19b95c646f179947f8",
+    "after_add_normalization.csv": "1643effc52e93ab9bd13feac8ddbf53a26810da600658151e0d1c7481fc65514",
+    "after_add_graph.json": "659a092f432ef6b84997e2fc3f4e5146d05ea5369d5b5adf6abb6661366c2c08",
+    "after_add_taxonomy_graph.json": "aa22cc2b4884fd5dfc18c9961d2608e0e8723c479a5481cb5000cab02df87ec8",
+    "after_remove_edges.csv": "8203e1ea795296a1f3c9bef17cd9b5b30f920031d1d66510262637385a57b0c1",
+    "after_remove_specificity.csv": "cb0d8fc9e0747c54157ee61aa4f0f0ee323dbfab97de35f7ed67b3543255a860",
+    "after_remove_normalization.csv": "c77332a11c9462d82fef43576431a139c30810ce570e465eb7f18425435fe580",
+    "after_remove_graph.json": "186696e1058c5fc2c04963c7d7e73d6e7b75a1f5525d08435240e5ec912c8fbd",
+    "after_remove_taxonomy_graph.json": "cd936372ace850b40805baac3fda4d165a03b682dca38e95e25e8b7595375b15",
+    "comparison.csv": "37d0935e64a77d1bdf98969524f8b491a9f96e436ff20fcd5ecd118361b53dd5",
+    "deltas.csv": "8d18af472d995ef6a456556ea9d1e1a4737260ce38dfc4f321f57012bc516057",
+    "changes_gt_0_1.csv": "0ee36ddab71aa32fa1adc0075149792b71341e2fab4e836b53925d5121679f1f",
+    "change_summary.csv": "16ba8c0602b2503c37b277d261066c85996cd739db501290b58a339deee97126",
+    "structure.csv": "c1efd9d31911488cc2167e34b910ec6d80833459ced6ba29abbac2ec451413f2",
+    "scenario.json": "8bb4f83790738988025e0a402f7caa472b7a72b3b33a5a3ac932daa270d2a42b",
+    "preconditions.json": "921f606aa6af15e295c8de661ec6d748592a89989154c0d6d2c21fc30d102291"
+  }
+}

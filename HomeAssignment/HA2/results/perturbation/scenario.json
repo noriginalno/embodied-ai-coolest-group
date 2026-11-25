@@ -1,0 +1,100 @@
+{
+  "design": "sequential: baseline → add three → remove three from after_add",
+  "experimental_only": true,
+  "not_ontology_corrections": true,
+  "identities": {
+    "A04": {
+      "label": "КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",
+      "source_id": "106515-N"
+    },
+    "A08": {
+      "label": "ЛИНЕЙНЫЙ РАЗМЕР",
+      "source_id": ""
+    },
+    "A05": {
+      "label": "ФИЗИЧЕСКАЯ СУЩНОСТЬ",
+      "source_id": "147134-N"
+    },
+    "C14": {
+      "label": "полость",
+      "source_id": "i110049"
+    },
+    "C23": {
+      "label": "эхолокация",
+      "source_id": "i36231"
+    },
+    "C04": {
+      "label": "расстояние",
+      "source_id": "106757-N"
+    },
+    "C13": {
+      "label": "место",
+      "source_id": "106451-N; i35580; i82501"
+    },
+    "C01": {
+      "label": "точка",
+      "source_id": "120377-N"
+    },
+    "C16": {
+      "label": "каверна",
+      "source_id": ""
+    },
+    "C05": {
+      "label": "высота",
+      "source_id": "106758-N"
+    }
+  },
+  "additions": [
+    {
+      "source": "A04",
+      "relation": "is_a",
+      "target": "A08",
+      "confidence": "medium",
+      "justification": "Экспериментальная manual-гипотеза: линейный размер — количественная величина. Присоединяет отдельную ветвь; не заявляется ребром RuWordNet.",
+      "provenance": "manual",
+      "source_provenance": "manual:perturbation"
+    },
+    {
+      "source": "A05",
+      "relation": "is_a",
+      "target": "C14",
+      "confidence": "high",
+      "justification": "Экспериментальный транзитивный shortcut: в baseline уже есть A05 → C12 → C14. Проверяет чувствительность глубины к избыточному ребру; не заявляется прямым гиперонимом RuWordNet.",
+      "provenance": "manual",
+      "source_provenance": "manual:perturbation"
+    },
+    {
+      "source": "C23",
+      "relation": "estimates",
+      "target": "C04",
+      "confidence": "medium",
+      "justification": "Экспериментальная manual-ассоциация: по задержке эха оценивается расстояние. Нетаксономический контроль; не входит в обе оценки S.",
+      "provenance": "manual",
+      "source_provenance": "manual:perturbation"
+    }
+  ],
+  "removals": [
+    {
+      "source": "C13",
+      "relation": "is_a",
+      "target": "C01",
+      "justification": "Абляция внутреннего ребра место → точка: отделяет ветвь точки и центра, не удаляя узлы."
+    },
+    {
+      "source": "C14",
+      "relation": "is_a",
+      "target": "C16",
+      "justification": "Абляция ребра к листу каверна: проверяет изоляцию листа и потерю потомка у предков."
+    },
+    {
+      "source": "C04",
+      "relation": "is_a",
+      "target": "C05",
+      "justification": "Абляция ребра к самому глубокому листу высота: проверяет изоляцию и смену глобального depth-знаменателя."
+    }
+  ],
+  "delta_threshold": 0.1,
+  "floating_boundary_tolerance": 1e-12,
+  "primary_normalization": "global over the same 44 nodes, recalculated in every state",
+  "non_taxonomic_edges_used_for_S": 0
+}

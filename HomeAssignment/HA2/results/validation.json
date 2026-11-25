@@ -1,5 +1,5 @@
 {
-  "input_snapshot": "HA2 CSV exports, 2026-11-25",
+  "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
   "node_count": 44,
   "target_count": 25,
   "auxiliary_count": 19,
@@ -26,15 +26,23 @@
     "C24",
     "C25"
   ],
+  "multiple_parent_count": 7,
+  "unequal_depth_nodes": [],
+  "POS_counts": {
+    "NOUN": 44
+  },
+  "provenance_counts": {
+    "wordnet": 37,
+    "manual": 4
+  },
   "all_nodes_scored": true,
   "source_directions_confirmed": 37,
   "taxonomy_direction": "parent_to_child; u -> v means v is_a u",
   "non_taxonomic_edges_used_for_specificity": 0,
   "warnings": [
-    "Input has 44 graph nodes, including 25 targets.",
     "Observed roots/leaves/isolates are properties of this snapshot, not all of RuWordNet.",
     "POS is supplemented manually where a synset suffix is unavailable; see pos_annotations.csv.",
-    "Primary global scores for isolates are mechanical values, not evidence of lexical specificity.",
-    "Alternative slide 28 formula and POS normalization are diagnostic, not primary scores."
+    "Alternative slide 28 formula and POS normalization are diagnostic, not primary scores.",
+    "Input has 44 nodes, outside seminar guidance 15–25 (not an explicit limit on HA2 slide 33). Inventory is retained unchanged."
   ]
 }

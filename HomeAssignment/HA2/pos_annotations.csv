@@ -1,30 +1,29 @@
-node_id,POS,provenance,justification
-C10,NOUN,manual,Noun label in the current Russian inventory.
-C11,NOUN,manual,Noun label in the current Russian inventory.
-C12,NOUN,manual,Noun label in the current Russian inventory.
-C13,NOUN,manual,Noun label in the current Russian inventory.
-C14,NOUN,manual,Noun label in the current Russian inventory.
-C15,NOUN,manual,Noun label in the current Russian inventory.
-C16,NOUN,manual,Noun label in the current Russian inventory.
-C17,NOUN,manual,Noun label in the current Russian inventory.
-C18,NOUN,manual,Noun label in the current Russian inventory.
-C19,NOUN,manual,Noun label in the current Russian inventory.
-C20,NOUN,manual,Noun label in the current Russian inventory.
-C21,NOUN,manual,Noun label in the current Russian inventory.
-C22,NOUN,manual,Noun label in the current Russian inventory.
-C23,NOUN,manual,Noun label in the current Russian inventory.
-C24,NOUN,manual,Noun label in the current Russian inventory.
-C25,NOUN,manual,Noun label in the current Russian inventory.
-A07,NOUN,manual,Noun label in the current Russian inventory.
-A08,NOUN,manual,Noun label in the current Russian inventory.
-A09,NOUN,manual,Noun label in the current Russian inventory.
-A10,NOUN,manual,Noun label in the current Russian inventory.
-A11,NOUN,manual,Noun label in the current Russian inventory.
-A12,NOUN,manual,Noun label in the current Russian inventory.
-A13,NOUN,manual,Noun label in the current Russian inventory.
-A14,NOUN,manual,Noun label in the current Russian inventory.
-A15,NOUN,manual,Noun label in the current Russian inventory.
-A16,NOUN,manual,Noun label in the current Russian inventory.
-A17,NOUN,manual,Noun label in the current Russian inventory.
-A18,NOUN,manual,Noun label in the current Russian inventory.
-A19,NOUN,manual,Noun label in the current Russian inventory.
+node_id,label,source_id,POS,provenance,justification
+C10,ширина,i63979,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C11,глубина,i63971,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C12,пространство,i35583,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C14,полость,i110049,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C15,пещера,i85180,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C16,каверна,,NOUN,manual,Лексическая разметка существительного; идентификатор синсета не передан.
+C17,поперечник,,NOUN,manual,Лексическая разметка существительного; идентификатор синсета не передан.
+C18,центр,i81833,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C19,угол,i109918,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C20,площадь,i63937,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C21,объём,i109320,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C22,близость,i63721,NOUN,manual,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C23,эхолокация,i36231,NOUN,manual,Название процесса выражено существительным; семантический класс не является частью речи.
+C24,головокружение,i112532,NOUN,manual,Название состояния выражено существительным; семантический класс не является частью речи.
+C25,ориентация,i109572,NOUN,manual,Название процесса или способности выражено существительным; не глагольный POS.
+A07,ВЕЛИЧИНА,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A08,ЛИНЕЙНЫЙ РАЗМЕР,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A10,ФИГУРА,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A12,ПАРАМЕТР,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A13,МАЛОСТЬ,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,,NOUN,manual,Лексическая разметка именной категории; идентификатор синсета не передан.
+A17,ВЫЯСНЕНИЕ,,NOUN,manual,Название процесса выражено существительным; семантический класс не является частью речи.
+A18,ОПРЕДЕЛЕНИЕ,,NOUN,manual,Название процесса выражено существительным; семантический класс не является частью речи.
+A19,УСТАНОВЛЕНИЕ,,NOUN,manual,Название процесса выражено существительным; семантический класс не является частью речи.

@@ -1,0 +1,4 @@
+stage,node_count,typed_edges,taxonomy_edges,components,roots,isolates,isolate_ids,multiple_parents,unequal_depth_nodes
+baseline,44,41,37,9,15,0,,7,0
+after_add,44,44,39,8,14,0,,8,6
+after_remove,44,41,36,11,17,2,C05;C16,8,5

@@ -14,6 +14,7 @@
       "source_id": "120377-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Определённое положение в пространстве, рассматриваемое без учёта размеров объекта.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C01"
@@ -26,6 +27,7 @@
       "source_id": "107133-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Внешняя граница тела, отделяющая его от окружающего пространства.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C02"
@@ -38,6 +40,7 @@
       "source_id": "106514-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Предел, отделяющий одну пространственную область от другой.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C03"
@@ -50,6 +53,7 @@
       "source_id": "106757-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Пространственная величина, характеризующая удалённость двух точек или объектов друг от друга.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C04"
@@ -62,6 +66,7 @@
       "source_id": "106758-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Вертикальное расстояние от точки или объекта до выбранного уровня отсчёта.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C05"
@@ -74,6 +79,7 @@
       "source_id": "106586-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Ориентация в пространстве относительно выбранной системы отсчёта.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C06"
@@ -86,6 +92,7 @@
       "source_id": "183-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Маршрут, по которому перемещаются между исходным и конечным местами.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C07"
@@ -98,6 +105,7 @@
       "source_id": "107038-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Ограниченный участок пространства, предназначенный для хранения или размещения объектов.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C08"
@@ -110,6 +118,7 @@
       "source_id": "107087-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Пустое пространство в теле или материале, через которое может проходить другой объект.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C09"
@@ -122,6 +131,7 @@
       "source_id": "i63979",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Поперечный размер объекта, измеряемый как расстояние между его противоположными боковыми границами.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C10"
@@ -134,6 +144,7 @@
       "source_id": "i63971",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Расстояние, измеряемое вниз, назад или внутрь от некоторой поверхности либо исходной точки.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C11"
@@ -146,6 +157,7 @@
       "source_id": "i35583",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Протяжённость, в которой расположены физические объекты.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C12"
@@ -157,7 +169,8 @@
       "source": "RuWordNet",
       "source_id": "106451-N; i35580; i82501",
       "POS": "NOUN",
-      "POS_provenance": "manual:pos_annotations.csv",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "Точка или участок пространства, в котором расположен объект.",
       "definition_provenance": "HA1 annotations; RuWordNet",
       "id": "C13"
@@ -170,6 +183,7 @@
       "source_id": "i110049",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Полое пространство, окружённое чем-либо.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C14"
@@ -182,6 +196,7 @@
       "source_id": "i85180",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Естественная полость в горной породе или под землёй.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C15"
@@ -194,6 +209,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного; идентификатор синсета не передан.",
       "definition": "Полость в горной породе; выбран геологический, а не медицинский смысл.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C16"
@@ -206,6 +222,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного; идентификатор синсета не передан.",
       "definition": "Поперечный размер или диаметр объекта.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C17"
@@ -218,6 +235,7 @@
       "source_id": "i81833",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Точка, равноудалённая от всех точек окружности или сферической поверхности.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C18"
@@ -230,6 +248,7 @@
       "source_id": "i109918",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Геометрическая фигура, образованная двумя лучами, исходящими из одной точки.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C19"
@@ -242,6 +261,7 @@
       "source_id": "i63937",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Количественная мера размера двумерной поверхности или плоской фигуры.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C20"
@@ -254,6 +274,7 @@
       "source_id": "i109320",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Количественная мера пространства, занимаемого трёхмерным телом или ограниченной областью.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C21"
@@ -266,6 +287,7 @@
       "source_id": "i63721",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.",
       "definition": "Небольшая пространственная удалённость одного места или объекта от другого.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C22"
@@ -278,6 +300,7 @@
       "source_id": "i36231",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Название процесса выражено существительным; семантический класс не является частью речи.",
       "definition": "Определение местонахождения объекта по времени возвращения отражённого звукового сигнала.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C23"
@@ -290,6 +313,7 @@
       "source_id": "i112532",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Название состояния выражено существительным; семантический класс не является частью речи.",
       "definition": "Ощущение вращения или неустойчивости, сопровождаемое чувством возможного падения.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C24"
@@ -302,7 +326,8 @@
       "source_id": "i109572",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
-      "definition": "Определение своего положения и направлений относительно пространственных ориентиров.",
+      "POS_justification": "Название процесса или способности выражено существительным; не глагольный POS.",
+      "definition": "Пространственное положение или выравнивание относительно сторон света либо иных направлений.",
       "definition_provenance": "RuWordNet; manual feature annotation",
       "id": "C25"
     },
@@ -314,6 +339,7 @@
       "source_id": "153782-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A01"
@@ -326,6 +352,7 @@
       "source_id": "146671-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A02"
@@ -338,6 +365,7 @@
       "source_id": "106768-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A03"
@@ -350,6 +378,7 @@
       "source_id": "106515-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A04"
@@ -362,6 +391,7 @@
       "source_id": "147134-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A05"
@@ -374,6 +404,7 @@
       "source_id": "106582-N",
       "POS": "NOUN",
       "POS_provenance": "wordnet:source_id_suffix",
+      "POS_justification": "POS прочитан из суффикса синсета в source_id.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A06"
@@ -386,6 +417,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A07"
@@ -398,6 +430,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A08"
@@ -410,6 +443,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A09"
@@ -422,6 +456,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A10"
@@ -434,6 +469,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A11"
@@ -446,6 +482,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A12"
@@ -458,6 +495,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A13"
@@ -470,6 +508,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A14"
@@ -482,6 +521,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A15"
@@ -494,6 +534,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Лексическая разметка именной категории; идентификатор синсета не передан.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A16"
@@ -506,6 +547,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Название процесса выражено существительным; семантический класс не является частью речи.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A17"
@@ -518,6 +560,7 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Название процесса выражено существительным; семантический класс не является частью речи.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A18"
@@ -530,116 +573,129 @@
       "source_id": "",
       "POS": "NOUN",
       "POS_provenance": "manual:pos_annotations.csv",
+      "POS_justification": "Название процесса выражено существительным; семантический класс не является частью речи.",
       "definition": "",
       "definition_provenance": "not_supplied",
       "id": "A19"
     }
   ],
-  "links": [
+  "edges": [
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "The selected sense is «центр, центральная точка»; the source lists «точка пространства» as its hypernym.",
+      "source_provenance": "RuWordNet",
       "source": "C01",
       "target": "C18",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106757-N -> 106758-N.",
+      "source_provenance": "RuWordNet",
       "source": "C04",
       "target": "C05",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106586-N -> 183-N.",
+      "source_provenance": "RuWordNet",
       "source": "C06",
       "target": "C07",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "Width is listed among the hypernym labels for «поперечник»; direction is parent -> child.",
+      "source_provenance": "RuWordNet page",
       "source": "C10",
       "target": "C17",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "The selected spatial cavity sense has direct hypernym space (ILI i110049).",
+      "source_provenance": "RuWordNet",
       "source": "C12",
       "target": "C14",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106451-N -> 120377-N.",
+      "source_provenance": "RuWordNet",
       "source": "C13",
       "target": "C01",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106451-N -> 107133-N.",
+      "source_provenance": "RuWordNet",
       "source": "C13",
       "target": "C02",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106451-N -> 106586-N.",
+      "source_provenance": "RuWordNet",
       "source": "C13",
       "target": "C06",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106451-N -> 107038-N.",
+      "source_provenance": "RuWordNet",
       "source": "C13",
       "target": "C08",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106451-N -> 107087-N.",
+      "source_provenance": "RuWordNet",
       "source": "C13",
       "target": "C09",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "«Пещера» is listed as a hyponym of the selected spatial «полость» sense (ILI i85180).",
+      "source_provenance": "RuWordNet",
       "source": "C14",
       "target": "C15",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Каверна» sense 2 (rock cavity) is listed in the spatial cavity branch; sense 1 is excluded.",
+      "source_provenance": "RuWordNet",
       "source": "C14",
       "target": "C16",
       "key": "is_a"
@@ -649,15 +705,17 @@
       "provenance": "manual",
       "confidence": "low",
       "justification": "«Близость» denotes nearness between places/objects; this association is not an is_a relation.",
+      "source_provenance": "manual",
       "source": "C22",
       "target": "C13",
       "key": "describes_relative_proximity_between"
     },
     {
       "relation": "used_for_localization_of",
-      "provenance": "RuWordNet gloss/manual",
+      "provenance": "manual",
       "confidence": "medium",
       "justification": "The checked gloss defines echolocation as a method for determining an object’s location using returning echoes.",
+      "source_provenance": "RuWordNet gloss/manual",
       "source": "C23",
       "target": "C13",
       "key": "used_for_localization_of"
@@ -667,240 +725,267 @@
       "provenance": "manual",
       "confidence": "medium",
       "justification": "A dizziness sensation can affect perceived spatial orientation; this is a semantic association, not a taxonomic claim.",
+      "source_provenance": "manual",
       "source": "C24",
       "target": "C25",
       "key": "affects_perceived_orientation"
     },
     {
       "relation": "orients_relative_to",
-      "provenance": "RuWordNet association/manual",
+      "provenance": "manual",
       "confidence": "medium",
       "justification": "The selected orientation sense is alignment relative to directions; RuWordNet also lists «направление» among associated concepts.",
+      "source_provenance": "RuWordNet association/manual",
       "source": "C25",
       "target": "C06",
       "key": "orients_relative_to"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "153782-N -> 146671-N in the supplied RuWordNet edge chain.",
+      "source_provenance": "RuWordNet",
       "source": "A01",
       "target": "A02",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "153782-N -> 147134-N in the supplied RuWordNet edge chain.",
+      "source_provenance": "RuWordNet",
       "source": "A01",
       "target": "A05",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "146671-N -> 106768-N in the supplied RuWordNet edge chain.",
+      "source_provenance": "RuWordNet",
       "source": "A02",
       "target": "A03",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106768-N -> 106515-N in the supplied RuWordNet edge chain.",
+      "source_provenance": "RuWordNet",
       "source": "A03",
       "target": "A04",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106515-N -> 106757-N.",
+      "source_provenance": "RuWordNet",
       "source": "A04",
       "target": "C04",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet extraction",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "Physical entity is recorded as the hypernym of the selected space sense; child identified by ILI i35583.",
+      "source_provenance": "RuWordNet extraction",
       "source": "A05",
       "target": "C12",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet/HA1",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "Physical entity is recorded as the hypernym of place in space (106451-N).",
+      "source_provenance": "RuWordNet/HA1",
       "source": "A05",
       "target": "C13",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet",
+      "provenance": "wordnet",
       "confidence": "high",
       "justification": "106582-N -> 106514-N.",
+      "source_provenance": "RuWordNet",
       "source": "A06",
       "target": "C03",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Величина» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.",
+      "source_provenance": "RuWordNet page",
       "source": "A07",
       "target": "C10",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Величина» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.",
+      "source_provenance": "RuWordNet page",
       "source": "A07",
       "target": "C11",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Линейный размер» is listed as a direct hypernym of «ширина»; identifier not captured in supplied extract.",
+      "source_provenance": "RuWordNet page",
       "source": "A08",
       "target": "C10",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Линейный размер» is listed as a direct hypernym of «глубина»; identifier not captured in supplied extract.",
+      "source_provenance": "RuWordNet page",
       "source": "A08",
       "target": "C11",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Геометрическая фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A09",
       "target": "C19",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Фигура» is listed as a hypernym of the selected angle-between-rays sense; source ID of parent not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A10",
       "target": "C19",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Количественный параметр» is listed as a hypernym of area-as-parameter; source ID not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A11",
       "target": "C20",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Количественный параметр» is listed as a hypernym of spatial volume; source ID not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A11",
       "target": "C21",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Параметр» is listed as a hypernym of area-as-parameter; source ID not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A12",
       "target": "C20",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Параметр» is listed as a hypernym of spatial volume; source ID not captured.",
+      "source_provenance": "RuWordNet page",
       "source": "A12",
       "target": "C21",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "The checked spatial-nearness sense (ILI i63721) lists «малость» among its hypernyms; this branch is retained as sourced and not merged into the physical-place branch.",
+      "source_provenance": "RuWordNet page",
       "source": "A13",
       "target": "C22",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Определение местонахождения» is listed among the hypernyms of echolocation; it is a process branch, not the physical-space entity branch.",
+      "source_provenance": "RuWordNet page",
       "source": "A14",
       "target": "C23",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Физическое самочувствие» is listed as a hypernym of dizziness (ILI i112532).",
+      "source_provenance": "RuWordNet page",
       "source": "A15",
       "target": "C24",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Физическое состояние» is listed as a hypernym of dizziness (ILI i112532).",
+      "source_provenance": "RuWordNet page",
       "source": "A16",
       "target": "C24",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Выяснение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.",
+      "source_provenance": "RuWordNet page",
       "source": "A17",
       "target": "C25",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Определение» is listed among the hypernyms of the selected orientation sense; source ILI i109572.",
+      "source_provenance": "RuWordNet page",
       "source": "A18",
       "target": "C25",
       "key": "is_a"
     },
     {
       "relation": "is_a",
-      "provenance": "RuWordNet page",
+      "provenance": "wordnet",
       "confidence": "medium",
       "justification": "«Установление» is listed among the hypernyms of the selected orientation sense; source ILI i109572.",
+      "source_provenance": "RuWordNet page",
       "source": "A19",
       "target": "C25",
       "key": "is_a"

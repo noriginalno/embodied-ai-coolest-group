@@ -1,0 +1,105 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "identity A04: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity A08: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity A05: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C14: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C23: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C04: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C13: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C01: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C16: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "identity C05: label + source_id",
+      "passed": true
+    },
+    {
+      "check": "exactly three distinct additions and removals",
+      "passed": true
+    },
+    {
+      "check": "additions are absent from baseline",
+      "passed": true
+    },
+    {
+      "check": "removals are original baseline edges, not undoing additions",
+      "passed": true
+    },
+    {
+      "check": "all endpoints exist",
+      "passed": true
+    },
+    {
+      "check": "A08 is an observed root before its bridge",
+      "passed": true
+    },
+    {
+      "check": "bridge joins different taxonomy components",
+      "passed": true
+    },
+    {
+      "check": "A05 → C14 is already implied transitively",
+      "passed": true
+    },
+    {
+      "check": "C13 → C01 is internal and C01 has one parent",
+      "passed": true
+    },
+    {
+      "check": "C16 is a leaf with one parent",
+      "passed": true
+    },
+    {
+      "check": "C05 is a deepest leaf with one parent",
+      "passed": true
+    },
+    {
+      "check": "exactly three edges removed from after_add",
+      "passed": true
+    },
+    {
+      "check": "same node inventory in all states",
+      "passed": true
+    },
+    {
+      "check": "typed edge counts baseline, +3, −3",
+      "passed": true
+    },
+    {
+      "check": "added cavity parent creates a nondegenerate depth interval",
+      "passed": true
+    },
+    {
+      "check": "DAG, all-node scores, non-taxonomic control in all states",
+      "passed": true
+    }
+  ]
+}

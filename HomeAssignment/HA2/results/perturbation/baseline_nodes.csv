@@ -1,0 +1,45 @@
+node_id,label,node_type,is_target,source,source_id,POS,POS_provenance,POS_justification
+C01,точка,target,TRUE,HA1; RuWordNet,120377-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C02,поверхность,target,TRUE,HA1; RuWordNet,107133-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C03,граница,target,TRUE,HA1; RuWordNet,106514-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C04,расстояние,target,TRUE,HA1; RuWordNet,106757-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C05,высота,target,TRUE,HA1; RuWordNet,106758-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C06,направление,target,TRUE,HA1; RuWordNet,106586-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C07,путь,target,TRUE,HA1; RuWordNet,183-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C08,вместилище,target,TRUE,HA1; RuWordNet,107038-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C09,отверстие,target,TRUE,HA1; RuWordNet,107087-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C10,ширина,target,TRUE,RuWordNet,i63979,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C11,глубина,target,TRUE,RuWordNet,i63971,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C12,пространство,target,TRUE,RuWordNet,i35583,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C13,место,target,TRUE,RuWordNet,106451-N; i35580; i82501,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+C14,полость,target,TRUE,RuWordNet,i110049,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C15,пещера,target,TRUE,RuWordNet,i85180,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C16,каверна,target,TRUE,RuWordNet,,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного; идентификатор синсета не передан.
+C17,поперечник,target,TRUE,RuWordNet,,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного; идентификатор синсета не передан.
+C18,центр,target,TRUE,RuWordNet,i81833,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C19,угол,target,TRUE,RuWordNet,i109918,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C20,площадь,target,TRUE,RuWordNet,i63937,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C21,объём,target,TRUE,RuWordNet,i109320,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C22,близость,target,TRUE,RuWordNet,i63721,NOUN,manual:pos_annotations.csv,Лексическая разметка существительного по переданному термину; не проверка POS в RuWordNet.
+C23,эхолокация,target,TRUE,RuWordNet,i36231,NOUN,manual:pos_annotations.csv,Название процесса выражено существительным; семантический класс не является частью речи.
+C24,головокружение,target,TRUE,RuWordNet,i112532,NOUN,manual:pos_annotations.csv,Название состояния выражено существительным; семантический класс не является частью речи.
+C25,ориентация,target,TRUE,RuWordNet,i109572,NOUN,manual:pos_annotations.csv,Название процесса или способности выражено существительным; не глагольный POS.
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,153782-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,146671-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",auxiliary,FALSE,RuWordNet,106768-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",auxiliary,FALSE,RuWordNet,106515-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,147134-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A06,"ЛИНИЯ, ЧЕРТА",auxiliary,FALSE,RuWordNet,106582-N,NOUN,wordnet:source_id_suffix,POS прочитан из суффикса синсета в source_id.
+A07,ВЕЛИЧИНА,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A08,ЛИНЕЙНЫЙ РАЗМЕР,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A10,ФИГУРА,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A12,ПАРАМЕТР,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A13,МАЛОСТЬ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Лексическая разметка именной категории; идентификатор синсета не передан.
+A17,ВЫЯСНЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Название процесса выражено существительным; семантический класс не является частью речи.
+A18,ОПРЕДЕЛЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Название процесса выражено существительным; семантический класс не является частью речи.
+A19,УСТАНОВЛЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,,NOUN,manual:pos_annotations.csv,Название процесса выражено существительным; семантический класс не является частью речи.

@@ -1,38 +1,38 @@
 source,relation,target,direction,source_direction_confirmed,evidence
-A01,is_a,A02,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A01,is_a,A05,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A02,is_a,A03,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A03,is_a,A04,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A05,is_a,C12,parent_to_child,True,raw/Edges.csv: source -> target
-A05,is_a,C13,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C13,is_a,C01,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C13,is_a,C02,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C13,is_a,C06,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C13,is_a,C08,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C13,is_a,C09,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C06,is_a,C07,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A06,is_a,C03,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A04,is_a,C04,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-C04,is_a,C05,parent_to_child,True,HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id
-A07,is_a,C10,parent_to_child,True,raw/Edges.csv: source -> target
-A07,is_a,C11,parent_to_child,True,raw/Edges.csv: source -> target
-A08,is_a,C10,parent_to_child,True,raw/Edges.csv: source -> target
-A08,is_a,C11,parent_to_child,True,raw/Edges.csv: source -> target
-C12,is_a,C14,parent_to_child,True,raw/Edges.csv: source -> target
-C14,is_a,C15,parent_to_child,True,raw/Edges.csv: source -> target
-C14,is_a,C16,parent_to_child,True,raw/Edges.csv: source -> target
-C10,is_a,C17,parent_to_child,True,raw/Edges.csv: source -> target
-C01,is_a,C18,parent_to_child,True,raw/Edges.csv: source -> target
-A09,is_a,C19,parent_to_child,True,raw/Edges.csv: source -> target
-A10,is_a,C19,parent_to_child,True,raw/Edges.csv: source -> target
-A11,is_a,C20,parent_to_child,True,raw/Edges.csv: source -> target
-A12,is_a,C20,parent_to_child,True,raw/Edges.csv: source -> target
-A11,is_a,C21,parent_to_child,True,raw/Edges.csv: source -> target
-A12,is_a,C21,parent_to_child,True,raw/Edges.csv: source -> target
-A13,is_a,C22,parent_to_child,True,raw/Edges.csv: source -> target
-A14,is_a,C23,parent_to_child,True,raw/Edges.csv: source -> target
-A15,is_a,C24,parent_to_child,True,raw/Edges.csv: source -> target
-A16,is_a,C24,parent_to_child,True,raw/Edges.csv: source -> target
-A17,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target
-A18,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target
-A19,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target
+A01,is_a,A02,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A01,is_a,A05,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A02,is_a,A03,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A03,is_a,A04,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A05,is_a,C12,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A05,is_a,C13,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C13,is_a,C01,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C13,is_a,C02,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C13,is_a,C06,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C13,is_a,C08,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C13,is_a,C09,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C06,is_a,C07,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A06,is_a,C03,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A04,is_a,C04,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C04,is_a,C05,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A07,is_a,C10,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A07,is_a,C11,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A08,is_a,C10,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A08,is_a,C11,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C12,is_a,C14,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C14,is_a,C15,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C14,is_a,C16,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C10,is_a,C17,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+C01,is_a,C18,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A09,is_a,C19,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A10,is_a,C19,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A11,is_a,C20,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A12,is_a,C20,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A11,is_a,C21,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A12,is_a,C21,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A13,is_a,C22,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A14,is_a,C23,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A15,is_a,C24,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A16,is_a,C24,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A17,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A18,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)
+A19,is_a,C25,parent_to_child,True,raw/Edges.csv: source -> target (parent -> child)

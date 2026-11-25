@@ -11,7 +11,6 @@ import importlib.metadata
 import json
 import math
 from pathlib import Path
-import re
 import sys
 import textwrap
 
@@ -20,6 +19,7 @@ from matplotlib.lines import Line2D
 from matplotlib.patches import FancyArrowPatch, Patch
 import networkx as nx
 import pandas as pd
+import sync as input_sync
 
 
 DATA_DIR = Path(__file__).resolve().parent
@@ -29,6 +29,11 @@ RELATION_COLORS = {
     "specifies_location_of": "#167c80",
     "has_endpoint": "#a54519",
     "passes_through": "#7851a9",
+    "describes_relative_proximity_between": "#b06b00",
+    "used_for_localization_of": "#167c80",
+    "affects_perceived_orientation": "#7851a9",
+    "orients_relative_to": "#a54519",
+    "estimates": "#286c39",
 }
 TARGET_COLOR = "#dcedfa"
 AUXILIARY_COLOR = "#edf0f2"
@@ -36,39 +41,16 @@ ROOT_COLOR = "#ad6b17"
 
 
 def load_inputs(data_dir=DATA_DIR):
-    """Read the role 2 snapshot and add transparent, non-semantic metadata."""
+    """Read current prepared inputs; reject recycled IDs and stale derived CSVs."""
     data_dir = Path(data_dir)
-    nodes = pd.read_csv(data_dir / "nodes.csv", dtype=str, keep_default_na=False)
-    edges = pd.read_csv(data_dir / "edges.csv", dtype=str, keep_default_na=False)
-    annotations = pd.read_csv(
-        data_dir / "pos_annotations.csv", dtype=str, keep_default_na=False
-    )
-    if not annotations.node_id.is_unique:
-        raise ValueError("Duplicate POS annotations")
-    extra = set(annotations.node_id) - set(nodes.node_id)
-    if extra:
-        raise ValueError(f"POS annotations for absent nodes: {sorted(extra)}")
-    by_id = annotations.set_index("node_id")
-    pos, provenance = [], []
-    for row in nodes.itertuples(index=False):
-        suffixes = set(re.findall(r"\d+-(N|V|A)(?=;|$)", row.source_id))
-        if row.node_id in by_id.index:
-            pos.append(by_id.loc[row.node_id, "POS"])
-            provenance.append(by_id.loc[row.node_id, "provenance"] + ":pos_annotations.csv")
-        elif len(suffixes) == 1:
-            pos.append({"N": "NOUN", "V": "VERB", "A": "ADJ"}[suffixes.pop()])
-            provenance.append("wordnet:source_id_suffix")
-        else:
-            pos.append("UNKNOWN")
-            provenance.append("not_supplied")
-    nodes["POS"] = pos
-    nodes["POS_provenance"] = provenance
+    node_rows, edge_rows = input_sync.load_prepared(data_dir)
+    nodes, edges = pd.DataFrame(node_rows), pd.DataFrame(edge_rows)
     # Definitions are copied, not generated; auxiliary definitions remain absent.
     concepts = pd.read_csv(
-        data_dir / "concepts.csv", dtype=str, keep_default_na=False
+        data_dir / "raw/Concepts_hw2.csv", dtype=str, keep_default_na=False
     )
     if not concepts.concept_id.is_unique:
-        raise ValueError("Duplicate concept IDs in concepts.csv")
+        raise ValueError("Duplicate concept IDs in raw/Concepts_hw2.csv")
     definitions = concepts.set_index("concept_id")
     nodes["definition"] = nodes.node_id.map(definitions.definition).fillna("")
     nodes["definition_provenance"] = nodes.node_id.map(
@@ -93,6 +75,9 @@ def build_graphs(nodes, edges):
         raise ValueError("is_target must be TRUE or FALSE")
     if edges[list(required_edges)].eq("").any().any():
         raise ValueError("Empty required edge field")
+    unsupported = set(edges.provenance) - input_sync.ALLOWED_PROVENANCE
+    if unsupported:
+        raise ValueError(f"Unsupported edge provenance: {sorted(unsupported)}")
     if edges.duplicated(["source", "relation", "target"]).any():
         raise ValueError("Duplicate typed edges")
     missing = (set(edges.source) | set(edges.target)) - set(nodes.node_id)
@@ -124,26 +109,13 @@ def build_graphs(nodes, edges):
 
 
 def audit_directions(data_dir, nodes, edges):
-    """Check storage orientation against source parent/child columns, not meaning."""
+    """Check storage orientation against revised source→target columns, not meaning."""
     data_dir = Path(data_dir)
     raw = pd.read_csv(data_dir / "raw/Edges.csv", dtype=str, keep_default_na=False)
     evidence = {
-        (r.source, r.target): "raw/Edges.csv: source -> target"
+        (r.source, r.target): "raw/Edges.csv: source -> target (parent -> child)"
         for r in raw.itertuples(index=False) if r.relation == "is_a"
     }
-    ha1_path = data_dir.parent / "HA1_submission/data/ruwordnet_edges.csv"
-    synset_nodes = {}
-    for row in nodes.itertuples(index=False):
-        for synset in row.source_id.split("; "):
-            if re.fullmatch(r"\d+-[NAV]", synset):
-                synset_nodes[synset] = row.node_id
-    if ha1_path.exists():
-        ha1 = pd.read_csv(ha1_path, dtype=str, keep_default_na=False)
-        for r in ha1.itertuples(index=False):
-            if r.parent_id in synset_nodes and r.child_id in synset_nodes:
-                evidence[synset_nodes[r.parent_id], synset_nodes[r.child_id]] = (
-                    "HA1_submission/data/ruwordnet_edges.csv: parent_id -> child_id"
-                )
     rows = []
     for r in edges.loc[edges.relation.eq("is_a")].itertuples(index=False):
         support = evidence.get((r.source, r.target), "")
@@ -319,6 +291,11 @@ def validate_scores(taxonomy, scores):
 def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, audit):
     """Write results/snapshots only; never modify the authoritative input CSVs."""
     data_dir = Path(data_dir)
+    prepared = json.loads((data_dir / "prepared_inputs.json").read_text(encoding="utf-8"))
+    for group in ("input_sha256", "prepared_sha256"):
+        for name, expected in prepared[group].items():
+            if hashlib.sha256((data_dir / name).read_bytes()).hexdigest() != expected:
+                raise ValueError(f"Stale prepared input manifest: {name}; rerun sync.py")
     output = data_dir / "results"
     output.mkdir(exist_ok=True)
     targets = scores.loc[scores.is_target.eq("TRUE")].copy()
@@ -333,8 +310,23 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
             json.dumps(nx.node_link_data(graph), ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
+    warnings = [
+        "Observed roots/leaves/isolates are properties of this snapshot, not all of RuWordNet.",
+        "POS is supplemented manually where a synset suffix is unavailable; see pos_annotations.csv.",
+        "Alternative slide 28 formula and POS normalization are diagnostic, not primary scores.",
+    ]
+    if not 15 <= len(nodes) <= 25:
+        warnings.append(
+            f"Input has {len(nodes)} nodes, outside seminar guidance 15–25 "
+            "(not an explicit limit on HA2 slide 33). Inventory is retained unchanged."
+        )
+    small_scopes = constants.loc[constants.node_count < MIN_NORMALIZATION_NODES, "scope"].tolist()
+    if small_scopes:
+        warnings.append(f"Raw-only normalization scopes with fewer than 10 nodes: {small_scopes}")
+    if list(nx.isolates(taxonomy)):
+        warnings.append("Global scores for isolates are mechanical, not evidence of lexical specificity.")
     checks = {
-        "input_snapshot": "HA2 CSV exports, 2026-11-25",
+        "source_commit": prepared["source_snapshot_commit"],
         "node_count": len(nodes), "target_count": len(targets),
         "auxiliary_count": int(nodes.node_type.eq("auxiliary").sum()),
         "typed_edge_count": len(edges), "relation_counts": edges.relation.value_counts().to_dict(),
@@ -344,40 +336,78 @@ def export_results(data_dir, nodes, edges, full, taxonomy, scores, constants, au
         "taxonomy_root_count": sum(taxonomy.in_degree(n) == 0 for n in taxonomy),
         "taxonomy_isolates": sorted(nx.isolates(taxonomy)),
         "multiple_parent_nodes": sorted(n for n in taxonomy if taxonomy.in_degree(n) > 1),
+        "multiple_parent_count": sum(taxonomy.in_degree(n) > 1 for n in taxonomy),
+        "unequal_depth_nodes": scores.loc[
+            scores.depth_min.ne(scores.depth_max), "node_id"
+        ].tolist(),
+        "POS_counts": nodes.POS.value_counts().to_dict(),
+        "provenance_counts": edges.provenance.value_counts().to_dict(),
         "all_nodes_scored": set(scores.node_id) == set(nodes.node_id),
         "source_directions_confirmed": int(audit.source_direction_confirmed.sum()),
         "taxonomy_direction": "parent_to_child; u -> v means v is_a u",
         "non_taxonomic_edges_used_for_specificity": 0,
-        "warnings": [
-            f"Input has {len(nodes)} graph nodes, including {len(targets)} targets.",
-            "Observed roots/leaves/isolates are properties of this snapshot, not all of RuWordNet.",
-            "POS is supplemented manually where a synset suffix is unavailable; see pos_annotations.csv.",
-            "Primary global scores for isolates are mechanical values, not evidence of lexical specificity.",
-            "Alternative slide 28 formula and POS normalization are diagnostic, not primary scores.",
-        ],
+        "warnings": warnings,
     }
     (output / "validation.json").write_text(
         json.dumps(checks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     paths = [
         data_dir / "nodes.csv", data_dir / "edges.csv", data_dir / "pos_annotations.csv",
-        data_dir / "concepts.csv", data_dir / "raw/Edges.csv",
-        data_dir / "ha2_analysis.py",
-        data_dir.parent / "HA1_submission/data/ruwordnet_edges.csv",
+        data_dir / "raw/Nodes.csv", data_dir / "raw/Concepts_hw2.csv",
+        data_dir / "raw/Edges.csv", data_dir / "raw/Sources.csv",
+        data_dir / "prepared_inputs.json", data_dir / "requirements.txt",
+    ]
+    references = [
         data_dir.parents[1] / "Seminars/Class03/Class_03_Instructor_Working_Notebook.ipynb",
         data_dir.parents[1] / "Seminars/Class03/Class_03_Semantic_Networks_Lecture_and_Seminar_Expanded_Lecture.pptx",
     ]
+    notebook_path = data_dir / "HA2_Semantic_Network.ipynb"
+    notebook_source = None
+    if notebook_path.exists():
+        cells = json.loads(notebook_path.read_text(encoding="utf-8"))["cells"]
+        # Hash sources, not outputs/timestamps: executing the notebook must not
+        # invalidate its own run manifest.
+        notebook_source = hashlib.sha256(json.dumps([
+            {"cell_type": c["cell_type"], "source": "".join(c["source"])} for c in cells
+        ], ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()
+    baseline_outputs = [
+        "specificity.csv", "specificity_targets.csv", "normalization.csv",
+        "direction_audit.csv", "node_attributes.csv", "typed_graph.json",
+        "taxonomy_graph.json", "validation.json",
+    ]
     manifest = {
-        "input_snapshot": checks["input_snapshot"], "python": sys.version.split()[0],
+        "run_kind": "baseline",
+        "source_commit": checks["source_commit"],
+        "source_commit_role": "raw input snapshot; processing code is identified by code_sha256",
+        "python": sys.version.split()[0],
+        "node_count": len(nodes), "target_count": len(targets), "typed_edge_count": len(edges),
         "packages": {p: importlib.metadata.version(p) for p in (
             "numpy", "pandas", "matplotlib", "networkx", "nbformat", "nbclient", "ipykernel"
         )},
         "input_sha256": {
-            str(p.relative_to(data_dir.parents[1])): hashlib.sha256(p.read_bytes()).hexdigest()
+            str(p.relative_to(data_dir)): hashlib.sha256(p.read_bytes()).hexdigest()
             for p in paths if p.exists()
+        },
+        "input_paths_relative_to": "data_dir",
+        "code_sha256": {
+            "ha2_analysis.py": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+            "sync.py": hashlib.sha256(Path(input_sync.__file__).read_bytes()).hexdigest(),
+        },
+        "notebook_source_sha256": notebook_source,
+        "reference_sha256": {
+            str(p.relative_to(data_dir.parents[1])): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in references if p.exists()
+        },
+        "baseline_output_sha256": {
+            name: hashlib.sha256((output / name).read_bytes()).hexdigest()
+            for name in baseline_outputs
         },
         "primary_normalization": "global over all supplied nodes, not separately by component",
         "normalization_constants": "normalization.csv",
+        "coverage_status": "not_recomputed",
+        "perturbation_status": "not_recomputed",
+        "artifacts_status": "not_recomputed",
+        "archived_alternative": "archive/pr5 contains the separate PR5 experiment, not current outputs",
         "interpretation_written": False, "perturbation_performed": False,
     }
     (output / "run_manifest.json").write_text(
@@ -402,13 +432,42 @@ def layered_positions(taxonomy):
     return positions
 
 
+def _edge_curve(ax, start, end, blocked_boxes, preferred):
+    """Choose a deterministic quadratic arc that avoids unrelated node boxes."""
+    sx, sy = start
+    ex, ey = end
+    candidates = [0] + [
+        direction * radius
+        for radius in (.16, .3, .45, .65, .9)
+        for direction in (preferred, -preferred)
+    ]
+    best, best_score = 0, (True, float("inf"))
+    for curve in candidates:
+        cx, cy = (sx + ex) / 2 + curve * (ey - sy), (sy + ey) / 2 - curve * (ex - sx)
+        points = [
+            ((1-t)**2 * sx + 2*(1-t)*t * cx + t*t * ex,
+             (1-t)**2 * sy + 2*(1-t)*t * cy + t*t * ey)
+            for t in (i / 100 for i in range(101))
+        ]
+        outside = any(not ax.bbox.contains(*p) for p in points)
+        hits = sum(any(box.contains(*p) for p in points) for box in blocked_boxes)
+        score = (outside, hits)
+        if score < best_score:
+            best, best_score = curve, score
+        if score == (False, 0):
+            break
+    return best
+
+
 def _draw_panel(ax, graph, positions, taxonomy_roots=(), show_edge_labels=True):
     """Use text-box boundaries, so arrowheads cannot disappear under labels."""
     texts = {}
-    wrap_width = 11 if len(graph) <= 8 else 17
+    wrap_width = 15 if len(graph) <= 8 else 17
     for n in graph:
         attrs = graph.nodes[n]
-        label = textwrap.fill(attrs.get("label", n).lower(), width=wrap_width)
+        label = textwrap.fill(
+            attrs.get("label", n).lower(), width=wrap_width, break_long_words=False
+        )
         texts[n] = ax.text(
             *positions[n], f"{n}\n{label}", ha="center", va="center", fontsize=8,
             zorder=3,
@@ -444,8 +503,29 @@ def _draw_panel(ax, graph, positions, taxonomy_roots=(), show_edge_labels=True):
             )
 
 
-def draw_taxonomy(taxonomy):
-    """One large main component, seven small components, and ALL isolates."""
+def _route_long_edges(ax, graph, positions):
+    """Route after all panels/legends exist: constrained layout must be final."""
+    boxes = {
+        text.get_text().split("\n")[0]: text.get_bbox_patch().get_window_extent().padded(5)
+        for text in ax.texts if text.get_text().split("\n")[0] in graph
+    }
+    arrows = [p for p in ax.patches if isinstance(p, FancyArrowPatch)]
+    labels = [t for t in ax.texts if t.get_text() == "is_a"]
+    for arrow, label, (u, v) in zip(arrows, labels, graph.edges):
+        if positions[u][1] - positions[v][1] <= 1.5:
+            continue
+        start, end = ax.transData.transform([positions[u], positions[v]])
+        curve = _edge_curve(
+            ax, start, end, [box for n, box in boxes.items() if n not in (u, v)],
+            1 if positions[v][0] <= positions[u][0] else -1,
+        )
+        arrow.set_connectionstyle(f"arc3,rad={curve}")
+        middle = (start + end) / 2 + curve / 2 * (end - start)[::-1] * [1, -1]
+        label.set_position(ax.transData.inverted().transform(middle))
+
+
+def draw_taxonomy(taxonomy, title=None):
+    """Largest component plus all remaining components and isolates."""
     components = sorted(
         (c for c in nx.weakly_connected_components(taxonomy) if len(c) > 1),
         key=lambda c: (-len(c), tuple(sorted(c))),
@@ -456,24 +536,37 @@ def draw_taxonomy(taxonomy):
     fig = plt.figure(figsize=(25, 4 * sum(heights)), layout="constrained")
     grid = fig.add_gridspec(len(heights), 4, height_ratios=heights)
     row_offset = 0
+    panels = []
     for i, comp in enumerate(components):
         if i == 0:
             ax = fig.add_subplot(grid[0, :])
             row_offset = 1
         else:
             ax = fig.add_subplot(grid[row_offset + (i - 1) // 4, (i - 1) % 4])
-        graph = taxonomy.subgraph(comp).copy()
+        # A subgraph view may iterate a set in hash-dependent order. Stable
+        # insertion order also stabilizes overlapping strokes and SVG path IDs.
+        graph = nx.DiGraph()
+        graph.add_nodes_from((n, dict(taxonomy.nodes[n])) for n in sorted(comp))
+        graph.add_edges_from(
+            (u, v, dict(taxonomy[u][v]))
+            for u in sorted(comp) for v in sorted(taxonomy.successors(u)) if v in comp
+        )
         roots = [n for n in graph if graph.in_degree(n) == 0]
-        _draw_panel(ax, graph, layered_positions(graph), roots)
+        positions = layered_positions(graph)
+        _draw_panel(ax, graph, positions, roots)
+        panels.append((ax, graph, positions))
         ax.set_title(f"K{i + 1:02d} · {len(comp)} узлов · корней в снимке: {len(roots)}", fontsize=11)
     if isolates:
         ax = fig.add_subplot(grid[len(heights) - 1, :])
-        graph = taxonomy.subgraph(isolates).copy()
+        graph = nx.DiGraph()
+        graph.add_nodes_from((n, dict(taxonomy.nodes[n])) for n in isolates)
         _draw_panel(ax, graph, {n: (i, 0) for i, n in enumerate(isolates)}, isolates)
         ax.set_title("Изолированные узлы снимка: все сохранены, гиперонимы не добавлены", fontsize=11)
     fig.suptitle(
-        f"HA2 · таксономия: {len(taxonomy)} узлов, {taxonomy.number_of_edges()} рёбер\n"
-        "Все стрелки is_a: родитель → потомок. Вертикальный ранг = максимальная глубина.",
+        title or (
+            f"HA2 · таксономия: {len(taxonomy)} узлов, {taxonomy.number_of_edges()} рёбер\n"
+            "Все стрелки is_a: родитель → потомок. Вертикальный ранг = максимальная глубина."
+        ),
         fontsize=17,
     )
     fig.legend(handles=[
@@ -482,6 +575,9 @@ def draw_taxonomy(taxonomy):
         Patch(facecolor="white", edgecolor=ROOT_COLOR, label="Корень только в текущем снимке"),
         Line2D([0], [0], color=RELATION_COLORS["is_a"], label="is_a: родитель → потомок"),
     ], loc="outside lower center", ncols=4, frameon=False)
+    fig.canvas.draw()
+    for panel in panels:
+        _route_long_edges(*panel)
     return fig
 
 
@@ -499,7 +595,7 @@ def draw_non_taxonomic(full):
         graph.add_edge(u, v, **attrs)
         _draw_panel(ax, graph, {u: (0, 0), v: (2, 0)})
         ax.set_title(
-            f'{attrs["justification"]}\n'
+            f'{textwrap.fill(attrs["justification"], width=105)}\n'
             f'provenance={attrs["provenance"]}; confidence={attrs["confidence"]}',
             fontsize=10,
         )
@@ -515,24 +611,35 @@ def draw_non_taxonomic(full):
     fig.legend(handles=[
         Line2D([0], [0], color=RELATION_COLORS.get(r, "#52666b"), label=r)
         for r in sorted({d["relation"] for _, _, d in edges})
-    ], loc="outside lower center", ncols=3, frameon=False)
+    ], loc="outside lower center", ncols=2, frameon=False)
     return fig
 
 
+def save_figure(figure, stem):
+    """Deterministic PNG/SVG pair, without timestamps or SVG trailing whitespace."""
+    stem = Path(stem)
+    stem.parent.mkdir(parents=True, exist_ok=True)
+    for suffix in ("png", "svg"):
+        path = stem.with_suffix("." + suffix)
+        with plt.rc_context({"svg.hashsalt": "ha2-role3"}):
+            figure.savefig(path, dpi=160, bbox_inches="tight",
+                           metadata={"Date": None} if suffix == "svg" else None)
+        if suffix == "svg":
+            path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n",
+                            encoding="utf-8")
+
+
 def save_figures(data_dir, taxonomy_figure, relations_figure):
-    output = Path(data_dir) / "figures"
-    output.mkdir(exist_ok=True)
-    for name, fig in (("taxonomy", taxonomy_figure), ("non_taxonomic", relations_figure)):
-        for suffix in ("png", "svg"):
-            with plt.rc_context({"svg.hashsalt": "ha2-role3"}):
-                fig.savefig(output / f"{name}.{suffix}", dpi=160, bbox_inches="tight",
-                            metadata={"Date": None} if suffix == "svg" else None)
+    for name, figure in (("taxonomy", taxonomy_figure), ("non_taxonomic", relations_figure)):
+        save_figure(figure, Path(data_dir) / "figures" / name)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=DATA_DIR)
     args = parser.parse_args()
+    plt.switch_backend("Agg")
+    plt.rcParams.update({"font.family": "DejaVu Sans"})
     nodes, edges = load_inputs(args.data_dir)
     full, taxonomy = build_graphs(nodes, edges)
     scores, constants = compute_specificity(taxonomy)

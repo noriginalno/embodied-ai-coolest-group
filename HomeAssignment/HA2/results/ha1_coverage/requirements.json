@@ -1,0 +1,84 @@
+{
+  "scope": "HA1-style C×S coverage of the revised HA2 target inventory, not a full HA1 audit",
+  "source_commit": "e1916dff33a5f25eb263696e0f95088b4d95f168",
+  "as_provided": {
+    "target_count": 25,
+    "usable_S_count": 25,
+    "C_min": 2,
+    "C_max": 4,
+    "S_min": 1.0,
+    "S_max": 5.0,
+    "C_threshold": 0.5,
+    "S_threshold": 0.5,
+    "minimum_per_quadrant": 3,
+    "quadrant_counts": {
+      "C+ S+": 5,
+      "C+ S-": 6,
+      "C- S+": 7,
+      "C- S-": 7
+    },
+    "no_S_count": 0,
+    "quadrant_minimum_met": true,
+    "all_targets_have_S": true,
+    "on_C_threshold": [
+      "граница",
+      "высота",
+      "путь",
+      "отверстие",
+      "место",
+      "объём",
+      "близость",
+      "головокружение"
+    ],
+    "on_S_threshold": [
+      "точка",
+      "поверхность",
+      "направление",
+      "вместилище",
+      "отверстие",
+      "полость"
+    ]
+  },
+  "closeness_social_0": {
+    "target_count": 25,
+    "usable_S_count": 25,
+    "C_min": 2,
+    "C_max": 4,
+    "S_min": 1.0,
+    "S_max": 5.0,
+    "C_threshold": 0.5,
+    "S_threshold": 0.5,
+    "minimum_per_quadrant": 3,
+    "quadrant_counts": {
+      "C+ S+": 5,
+      "C+ S-": 5,
+      "C- S+": 7,
+      "C- S-": 8
+    },
+    "no_S_count": 0,
+    "quadrant_minimum_met": true,
+    "all_targets_have_S": true,
+    "on_C_threshold": [
+      "граница",
+      "высота",
+      "путь",
+      "отверстие",
+      "место",
+      "объём",
+      "головокружение"
+    ],
+    "on_S_threshold": [
+      "точка",
+      "поверхность",
+      "направление",
+      "вместилище",
+      "отверстие",
+      "полость"
+    ]
+  },
+  "sensitivity_changed_concepts": [
+    "близость"
+  ],
+  "source_annotations_modified": false,
+  "perturbation_performed": false
+}

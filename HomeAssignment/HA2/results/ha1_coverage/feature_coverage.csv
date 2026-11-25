@@ -1,0 +1,15 @@
+scenario,feature,count_0,count_1,count_2,nonzero_count,sum
+as_provided,visual,2,10,13,23,36
+as_provided,auditory,24,0,1,1,2
+as_provided,tactile,15,10,0,10,10
+as_provided,motor,23,2,0,2,2
+as_provided,proprioceptive,14,11,0,11,11
+as_provided,interoceptive,24,0,1,1,2
+as_provided,social,24,1,0,1,1
+closeness_social_0,visual,2,10,13,23,36
+closeness_social_0,auditory,24,0,1,1,2
+closeness_social_0,tactile,15,10,0,10,10
+closeness_social_0,motor,23,2,0,2,2
+closeness_social_0,proprioceptive,14,11,0,11,11
+closeness_social_0,interoceptive,24,0,1,1,2
+closeness_social_0,social,25,0,0,0,0

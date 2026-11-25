@@ -23,7 +23,7 @@ FIGURE_STEMS = [
 ]
 CODE_FILES = ["sync.py", "ha2_analysis.py", "ha2_coverage.py", "ha2_perturbation.py", "ha2_artifacts.py", "role4_slide30.py"]
 DOC_FILES = ["README.md", "ROLE4.md", "INPUT_FORMAT.md", "INTERPRETATION.md"]
-SLIDE30 = ["results/slide30/" + name for name in ("after_remove_edges.csv", "after_remove_specificity.csv", "normalization.csv", "changes_gt_0_1.csv")]
+SLIDE30 = ["results/slide30/" + name for name in ("after_remove_edges.csv", "after_remove_specificity.csv", "normalization.csv", "changes_gt_0_1.csv", "coverage_audit.csv")]
 
 
 def sha256(path):

@@ -1,0 +1,45 @@
+﻿node_id,label,node_type,is_target,source,source_id
+C01,точка,target,TRUE,HA1; RuWordNet,120377-N
+C02,поверхность,target,TRUE,HA1; RuWordNet,107133-N
+C03,граница,target,TRUE,HA1; RuWordNet,106514-N
+C04,расстояние,target,TRUE,HA1; RuWordNet,106757-N
+C05,высота,target,TRUE,HA1; RuWordNet,106758-N
+C06,направление,target,TRUE,HA1; RuWordNet,106586-N
+C07,путь,target,TRUE,HA1; RuWordNet,183-N
+C08,вместилище,target,TRUE,HA1; RuWordNet,107038-N
+C09,отверстие,target,TRUE,HA1; RuWordNet,107087-N
+C10,ширина,target,TRUE,RuWordNet,i63979
+C11,глубина,target,TRUE,RuWordNet,i63971
+C12,пространство,target,TRUE,RuWordNet,i35583
+C13,место,target,TRUE,RuWordNet,106451-N; i35580; i82501
+C14,полость,target,TRUE,RuWordNet,i110049
+C15,пещера,target,TRUE,RuWordNet,i85180
+C16,каверна,target,TRUE,RuWordNet,
+C17,поперечник,target,TRUE,RuWordNet,
+C18,центр,target,TRUE,RuWordNet,i81833
+C19,угол,target,TRUE,RuWordNet,i109918
+C20,площадь,target,TRUE,RuWordNet,i63937
+C21,объём,target,TRUE,RuWordNet,i109320
+C22,близость,target,TRUE,RuWordNet,i63721
+C23,эхолокация,target,TRUE,RuWordNet,i36231
+C24,головокружение,target,TRUE,RuWordNet,i112532
+C25,ориентация,target,TRUE,RuWordNet,i109572
+A01,ПОСТОЯННАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,153782-N
+A02,АБСТРАКТНАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,146671-N
+A03,"СВОЙСТВО, ХАРАКТЕРИСТИКА",auxiliary,FALSE,RuWordNet,106768-N
+A04,"КОЛИЧЕСТВО, ВЕЛИЧИНА, ЧИСЛО",auxiliary,FALSE,RuWordNet,106515-N
+A05,ФИЗИЧЕСКАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,147134-N
+A06,"ЛИНИЯ, ЧЕРТА",auxiliary,FALSE,RuWordNet,106582-N
+A07,ВЕЛИЧИНА,auxiliary,FALSE,RuWordNet page; ID not captured,
+A08,ЛИНЕЙНЫЙ РАЗМЕР,auxiliary,FALSE,RuWordNet page; ID not captured,
+A09,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,auxiliary,FALSE,RuWordNet page; ID not captured,
+A10,ФИГУРА,auxiliary,FALSE,RuWordNet page; ID not captured,
+A11,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,auxiliary,FALSE,RuWordNet page; ID not captured,
+A12,ПАРАМЕТР,auxiliary,FALSE,RuWordNet page; ID not captured,
+A13,МАЛОСТЬ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A14,ОПРЕДЕЛЕНИЕ МЕСТОНАХОЖДЕНИЯ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A15,ФИЗИЧЕСКОЕ САМОЧУВСТВИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A16,ФИЗИЧЕСКОЕ СОСТОЯНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A17,ВЫЯСНЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A18,ОПРЕДЕЛЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,
+A19,УСТАНОВЛЕНИЕ,auxiliary,FALSE,RuWordNet page; ID not captured,

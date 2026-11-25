@@ -1,26 +1,26 @@
-"concept_id","term","selected_sense","source","source_id","notes"
-"C01","точка","Точка пространства","HA1; RuWordNet","120377-N","Родитель — место в пространстве."
-"C02","поверхность","Поверхность (наружная сторона)","HA1; RuWordNet","107133-N","Родитель — место в пространстве."
-"C03","граница","Предел, граница","HA1; RuWordNet","106514-N","Родитель — линия, черта."
-"C04","расстояние","Расстояние","HA1; RuWordNet","106757-N","Родитель — количество, величина, число."
-"C05","высота","Высота (расстояние)","HA1; RuWordNet","106758-N","Родитель — расстояние."
-"C06","направление","Направление в пространстве","HA1; RuWordNet","106586-N","Родитель — место в пространстве."
-"C07","путь","Маршрут движения","HA1; RuWordNet","183-N","Родитель — направление в пространстве."
-"C08","вместилище","Вместилище","HA1; RuWordNet","107038-N","Родитель — место в пространстве."
-"C09","отверстие","Отверстие","HA1; RuWordNet","107087-N","Родитель — место в пространстве."
-"C10","между","Пространственное отношение","HA1","","Отдельный RuWordNet-синсет для выбранного значения не установлен."
-"C11","над","Пространственное отношение","HA1","","Отдельный RuWordNet-синсет для выбранного значения не установлен."
-"C12","внутри","Пространственное отношение","HA1","","Отдельный RuWordNet-синсет для выбранного значения не установлен."
-"C13","ширина","Широта 2","RuWordNet","i63979","Указанные гиперонимы включены; ассоциации исключены из is_a."
-"C14","глубина","Глубина 1 — расстояние","RuWordNet","i63971","Выбран смысл расстояния, а не глубокого места или метафорического значения."
-"C15","центр","Центр 2 — центральная точка","RuWordNet","i81833","Гипероним — точка пространства; i63679 также указан для centrality."
-"C16","угол","Угол 1 — угол между лучами","RuWordNet","i109918","Гиперонимы — геометрическая фигура и фигура."
-"C17","пространство","Пространство 1","RuWordNet","i35583","Гипероним — физическая сущность."
-"C18","место","Место 2 — место в пространстве","RuWordNet","106451-N; i35580; i82501","i35580 — location.n.01; i82501 — topographic_point.n.01."
-"C19","положение","Положение 5 — расположение, порядок размещения","RuWordNet","i63666; i63667","Выбран пространственный смысл; ассоциация с местом не является is_a."
-"C20","координата","Координата (число)","RuWordNet","i68377","Гипероним — число; место в пространстве указано как ассоциация."
-"C21","плоскость","Плоскость 1","RuWordNet","i109765","Гипероним — поверхность."
-"C22","площадь","Площадь 1 — площадь как параметр","RuWordNet","i63937","Гипероним — количественный параметр."
-"C23","объём","Объём 2 — объём пространства","RuWordNet","i109320","Гипероним — количественный параметр."
-"C24","радиус","Радиус 1 — радиус круга, шара","RuWordNet","","ILI на странице не указан; гиперонимы перечислены в записи."
-"C25","диаметр","Диаметр","RuWordNet","i63810; i109824","В записи указаны два ILI."
+﻿concept_id,term,selected_sense,source,source_id,notes
+C01,точка,Точка пространства,HA1; RuWordNet,120377-N,Hypernym: «место в пространстве» (106451-N).
+C02,поверхность,Поверхность (наружная сторона),HA1; RuWordNet,107133-N,Hypernym: «место в пространстве».
+C03,граница,"Предел, граница",HA1; RuWordNet,106514-N,"Hypernym: «линия, черта» (106582-N)."
+C04,расстояние,Расстояние,HA1; RuWordNet,106757-N,"Hypernym: «количество, величина, число» (106515-N)."
+C05,высота,Высота (расстояние),HA1; RuWordNet,106758-N,Hypernym: «расстояние» (106757-N).
+C06,направление,Направление в пространстве,HA1; RuWordNet,106586-N,Hypernym: «место в пространстве»; related concepts include «ориентация».
+C07,путь,Маршрут движения,HA1; RuWordNet,183-N,Hypernym: «направление в пространстве» (106586-N).
+C08,вместилище,Вместилище,HA1; RuWordNet,107038-N,Hypernym: «место в пространстве».
+C09,отверстие,Отверстие,HA1; RuWordNet,107087-N,Hypernym: «место в пространстве».
+C10,ширина,Ширина,RuWordNet,i63979,Hypernym labels include «величина» and «линейный размер»; source identifiers not captured in the supplied extract.
+C11,глубина,Глубина 1 — расстояние,RuWordNet,i63971,"Selected geometric-distance sense, not «глубокое место» or a metaphorical sense; parent labels include «величина» and «линейный размер»."
+C12,пространство,Пространство 1,RuWordNet,i35583,Hypernym: «физическая сущность» (147134-N); source extraction grouped two alternative labels under one RuThes concept.
+C13,место,Место 2 — место в пространстве,RuWordNet,106451-N; i35580; i82501,Selected spatial-location sense. i35580 = location.n.01; i82501 = topographic_point.n.01.
+C14,полость,Полость 1 — полое пространство,RuWordNet,i110049,WordNet gloss: space that is surrounded by something; direct hypernym: «пространство» (i35583).
+C15,пещера,Пещера,RuWordNet,i85180,Listed as a hyponym of the selected spatial «полость» sense.
+C16,каверна,Каверна 2 — полость в горной породе,RuWordNet,,Geological sense 2 only; do not use sense 1 (bodily/pathological cavity). ILI identifier was not captured in the supplied extract.
+C17,поперечник,Поперечник — поперечный размер,RuWordNet,,The checked source lists width/diameter among hypernym labels; source ID was not captured. Direction is hypernym -> «поперечник».
+C18,центр,Центр 2 — центральная точка,RuWordNet,i81833,Selected central-point sense; hypernym: «точка пространства». i63679 also appears for centrality but is not selected here.
+C19,угол,Угол 1 — угол между лучами,RuWordNet,i109918,Selected geometric angle-between-rays sense; hypernyms: «геометрическая фигура» and «фигура».
+C20,площадь,Площадь 1 — площадь как параметр,RuWordNet,i63937,"Selected parameter sense, not a public square; hypernyms include «количественный параметр» and «параметр»."
+C21,объём,Объём 2 — объём пространства,RuWordNet,i109320,Selected spatial-volume sense; hypernyms include «количественный параметр» and «параметр».
+C22,близость,Пространственная близость / nearness,RuWordNet,i63721,Checked sense is spatial nearness. The supplied hypernym «малость» does not provide a verified bridge into the physical-place branch. Social=1 is a low-confidence manual rating only for interpersonal-proximity uses; score 0 is the conservative alternative for strictly metric nearness.
+C23,эхолокация,Способ определения местонахождения по возвращению эха,RuWordNet,i36231,"Checked gloss: determining an object’s location from the return time of an echo. This supports auditory=2. Hypernym labels include «локация» and «определение местонахождения». It is a localization method/process, not a static spatial entity."
+C24,головокружение,Головокружение / dizziness,RuWordNet,i112532,Checked gloss: a reeling sensation; feeling that one is about to fall. This supports interoceptive=2 and cautious proprioceptive=1. Hypernyms include «физическое самочувствие» and «физическое состояние».
+C25,ориентация,Ориентация 1 — ориентирование на местности,RuWordNet,i109572,"Checked gloss: position/alignment relative to compass points or other directions. Hypernyms: «выяснение», «определение», «установление»; «направление» appears as an associated concept. This is a process/ability rather than a static spatial entity."

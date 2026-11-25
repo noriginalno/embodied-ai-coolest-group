@@ -1,0 +1,1083 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "taxonomy_direction": "parent_to_child"
+  },
+  "nodes": [
+    {
+      "label": "точка",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "120377-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Определённое положение в пространстве, рассматриваемое без учёта размеров объекта.",
+      "definition_provenance": "generated",
+      "id": "C01"
+    },
+    {
+      "label": "поверхность",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "107133-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Внешняя граница тела, отделяющая его от окружающего пространства.",
+      "definition_provenance": "generated",
+      "id": "C02"
+    },
+    {
+      "label": "граница",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106514-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Предел, отделяющий одну пространственную область от другой.",
+      "definition_provenance": "generated",
+      "id": "C03"
+    },
+    {
+      "label": "расстояние",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106757-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Пространственная величина, характеризующая удалённость двух точек или объектов друг от друга.",
+      "definition_provenance": "generated",
+      "id": "C04"
+    },
+    {
+      "label": "высота",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106758-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Вертикальное расстояние от точки или объекта до выбранного уровня отсчёта, например поверхности земли или уровня моря.",
+      "definition_provenance": "generated",
+      "id": "C05"
+    },
+    {
+      "label": "направление",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106586-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Ориентация в пространстве относительно выбранной системы отсчёта.",
+      "definition_provenance": "generated",
+      "id": "C06"
+    },
+    {
+      "label": "путь",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "183-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Маршрут, по которому перемещаются между исходным и конечным местами.",
+      "definition_provenance": "generated",
+      "id": "C07"
+    },
+    {
+      "label": "вместилище",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "107038-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Ограниченный участок пространства, предназначенный для хранения или транспортировки каких-либо объектов.",
+      "definition_provenance": "generated",
+      "id": "C08"
+    },
+    {
+      "label": "отверстие",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1; RuWordNet",
+      "source_id": "107087-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Пустое пространство в теле или материале, через которое может проходить другой объект.",
+      "definition_provenance": "generated",
+      "id": "C09"
+    },
+    {
+      "label": "между",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1",
+      "source_id": "",
+      "POS": "ADP",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Положение объекта в промежутке, ограниченном двумя пространственными ориентирами.",
+      "definition_provenance": "generated",
+      "id": "C10"
+    },
+    {
+      "label": "над",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1",
+      "source_id": "",
+      "POS": "ADP",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Положение объекта выше другого объекта относительно вертикальной оси.",
+      "definition_provenance": "generated",
+      "id": "C11"
+    },
+    {
+      "label": "внутри",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "HA1",
+      "source_id": "",
+      "POS": "ADV",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Положение объекта в пределах ограниченной пространственной области.",
+      "definition_provenance": "generated",
+      "id": "C12"
+    },
+    {
+      "label": "ширина",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i63979",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Поперечный размер объекта, измеряемый как расстояние между его противоположными боковыми границами.",
+      "definition_provenance": "generated",
+      "id": "C13"
+    },
+    {
+      "label": "глубина",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i63971",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Расстояние, измеряемое в направлении вниз, назад или внутрь от некоторой поверхности либо исходной точки.",
+      "definition_provenance": "generated",
+      "id": "C14"
+    },
+    {
+      "label": "центр",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i81833",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Точка, равноудалённая от концов отрезка или крайних точек геометрической фигуры; для окружности — точка, равноудалённая от всех точек окружности.",
+      "definition_provenance": "generated",
+      "id": "C15"
+    },
+    {
+      "label": "угол",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i109918",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Геометрическая фигура, образованная двумя лучами, исходящими из одной точки.",
+      "definition_provenance": "generated",
+      "id": "C16"
+    },
+    {
+      "label": "пространство",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i35583",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Неограниченная протяжённость, в которой расположены все физические объекты.",
+      "definition_provenance": "manual",
+      "id": "C17"
+    },
+    {
+      "label": "место",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "106451-N; i35580; i82501",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "Точка или участок пространства, в котором расположен объект.",
+      "definition_provenance": "manual",
+      "id": "C18"
+    },
+    {
+      "label": "положение",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i63666; i63667",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Пространственное расположение объекта или порядок его размещения относительно других объектов.",
+      "definition_provenance": "manual",
+      "id": "C19"
+    },
+    {
+      "label": "координата",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i68377",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Число, определяющее положение точки относительно выбранной оси или системы координат.",
+      "definition_provenance": "manual",
+      "id": "C20"
+    },
+    {
+      "label": "плоскость",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i109765",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Неограниченная двумерная геометрическая поверхность.",
+      "definition_provenance": "manual",
+      "id": "C21"
+    },
+    {
+      "label": "площадь",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i63937",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Величина, характеризующая размер двумерной поверхности, ограниченной заданным контуром.",
+      "definition_provenance": "manual",
+      "id": "C22"
+    },
+    {
+      "label": "объём",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i109320",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Величина трёхмерного пространства, занимаемого объектом.",
+      "definition_provenance": "manual",
+      "id": "C23"
+    },
+    {
+      "label": "радиус",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "ILI not provided",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Отрезок, соединяющий центр круга или шара с точкой окружности или поверхности шара; также его длина.",
+      "definition_provenance": "manual",
+      "id": "C24"
+    },
+    {
+      "label": "диаметр",
+      "node_type": "target",
+      "is_target": "TRUE",
+      "source": "RuWordNet",
+      "source_id": "i63810; i109824",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "Отрезок прямой, проходящий через центр круга или шара и соединяющий две точки его окружности или поверхности.",
+      "definition_provenance": "manual",
+      "id": "C25"
+    },
+    {
+      "label": "ЛИНИЯ ЧЕРТА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "106582-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A02"
+    },
+    {
+      "label": "КОЛИЧЕСТВО ВЕЛИЧИНА ЧИСЛО",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "106515-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A03"
+    },
+    {
+      "label": "ФИЗИЧЕСКАЯ СУЩНОСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "147134-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A04"
+    },
+    {
+      "label": "ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A05"
+    },
+    {
+      "label": "ГЕОМЕТРИЧЕСКАЯ ФИГУРА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A06"
+    },
+    {
+      "label": "ФИГУРА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A07"
+    },
+    {
+      "label": "БЫТНОСТЬ МЕСТОНАХОЖДЕНИЕ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A08"
+    },
+    {
+      "label": "ЧИСЛО",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A09"
+    },
+    {
+      "label": "КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A10"
+    },
+    {
+      "label": "ПАРАМЕТР",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A11"
+    },
+    {
+      "label": "ВЕЛИЧИНА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A12"
+    },
+    {
+      "label": "ЛИНЕЙНЫЙ РАЗМЕР",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A13"
+    },
+    {
+      "label": "ПРОТЯЖЕНИЕ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A14"
+    },
+    {
+      "label": "ПРОТЯЖЕННОСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A15"
+    },
+    {
+      "label": "РАЗМЕР",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A16"
+    },
+    {
+      "label": "ДИСТАНЦИЯ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A17"
+    },
+    {
+      "label": "ДЛИНА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A18"
+    },
+    {
+      "label": "ОТРЕЗОК",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A19"
+    },
+    {
+      "label": "ОТРЕЗОК ПРЯМОЙ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A20"
+    },
+    {
+      "label": "ОТРЕЗОК ПРЯМОЙ ЛИНИИ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A21"
+    },
+    {
+      "label": "СЕГМЕНТ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A22"
+    },
+    {
+      "label": "СЕГМЕНТ ПРЯМОЙ ЛИНИИ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A23"
+    },
+    {
+      "label": "СРЕДИНА СЕРЕДИНА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A25"
+    },
+    {
+      "label": "МЕСТОНАХОЖДЕНИЕ НАХОЖДЕНИЕ ПРЕБЫВАНИЕ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A26"
+    },
+    {
+      "label": "ПОЛОЖЕНИЕ РАСПОЛОЖЕНИЕ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "RuWordNet",
+      "source_id": "",
+      "POS": "NOUN",
+      "POS_provenance": "manual:pos_annotations.csv",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "A27"
+    },
+    {
+      "label": "ПОСТОЯННАЯ СУЩНОСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "153782-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:153782-N"
+    },
+    {
+      "label": "СВОЙСТВО, ХАРАКТЕРИСТИКА",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106768-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:106768-N"
+    },
+    {
+      "label": "АБСТРАКТНАЯ СУЩНОСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "146671-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:146671-N"
+    },
+    {
+      "label": "ПОЛОСА НА ПОВЕРХНОСТИ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "149355-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:149355-N"
+    },
+    {
+      "label": "ПОЛОСА НА ПОВЕРХНОСТИ, В ПРОСТРАНСТВЕ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106581-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:106581-N"
+    },
+    {
+      "label": "СОСТАВНАЯ ЧАСТЬ",
+      "node_type": "auxiliary",
+      "is_target": "FALSE",
+      "source": "HA1; RuWordNet",
+      "source_id": "106509-N",
+      "POS": "NOUN",
+      "POS_provenance": "wordnet:source_id_suffix",
+      "definition": "",
+      "definition_provenance": "not_supplied",
+      "id": "HA1:106509-N"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «точка» как гипероним для «центр».",
+      "source": "C01",
+      "target": "C15"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «расстояние» как гипероним для «высота».",
+      "source": "C04",
+      "target": "C05"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «направление» как гипероним для «путь».",
+      "source": "C06",
+      "target": "C07"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «место» как гипероним для «точка».",
+      "source": "C18",
+      "target": "C01"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «место» как гипероним для «поверхность».",
+      "source": "C18",
+      "target": "C02"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «место» как гипероним для «направление».",
+      "source": "C18",
+      "target": "C06"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «место» как гипероним для «вместилище».",
+      "source": "C18",
+      "target": "C08"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «место» как гипероним для «отверстие».",
+      "source": "C18",
+      "target": "C09"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ЛИНИЯ ЧЕРТА» как гипероним для «граница».",
+      "source": "A02",
+      "target": "C03"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «КОЛИЧЕСТВО ВЕЛИЧИНА ЧИСЛО» как гипероним для «расстояние».",
+      "source": "A03",
+      "target": "C04"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ФИЗИЧЕСКАЯ СУЩНОСТЬ» как гипероним для «пространство».",
+      "source": "A04",
+      "target": "C17"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ФИЗИЧЕСКАЯ СУЩНОСТЬ» как гипероним для «место».",
+      "source": "A04",
+      "target": "C18"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ» как гипероним для «пространство».",
+      "source": "A05",
+      "target": "C17"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ» как гипероним для «место».",
+      "source": "A05",
+      "target": "C18"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ГЕОМЕТРИЧЕСКАЯ ФИГУРА» как гипероним для «угол».",
+      "source": "A06",
+      "target": "C16"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ФИГУРА» как гипероним для «угол».",
+      "source": "A07",
+      "target": "C16"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ЧИСЛО» как гипероним для «координата».",
+      "source": "A09",
+      "target": "C20"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР» как гипероним для «площадь».",
+      "source": "A10",
+      "target": "C22"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР» как гипероним для «объём».",
+      "source": "A10",
+      "target": "C23"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПАРАМЕТР» как гипероним для «площадь».",
+      "source": "A11",
+      "target": "C22"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПАРАМЕТР» как гипероним для «объём».",
+      "source": "A11",
+      "target": "C23"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ВЕЛИЧИНА» как гипероним для «ширина».",
+      "source": "A12",
+      "target": "C13"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ВЕЛИЧИНА» как гипероним для «глубина».",
+      "source": "A12",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ЛИНЕЙНЫЙ РАЗМЕР» как гипероним для «ширина».",
+      "source": "A13",
+      "target": "C13"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ЛИНЕЙНЫЙ РАЗМЕР» как гипероним для «глубина».",
+      "source": "A13",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПРОТЯЖЕНИЕ» как гипероним для «ширина».",
+      "source": "A14",
+      "target": "C13"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПРОТЯЖЕНИЕ» как гипероним для «глубина».",
+      "source": "A14",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПРОТЯЖЕННОСТЬ» как гипероним для «ширина».",
+      "source": "A15",
+      "target": "C13"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ПРОТЯЖЕННОСТЬ» как гипероним для «глубина».",
+      "source": "A15",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «РАЗМЕР» как гипероним для «ширина».",
+      "source": "A16",
+      "target": "C13"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «РАЗМЕР» как гипероним для «глубина».",
+      "source": "A16",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ДИСТАНЦИЯ» как гипероним для «глубина».",
+      "source": "A17",
+      "target": "C14"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК» как гипероним для «радиус».",
+      "source": "A19",
+      "target": "C24"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК» как гипероним для «диаметр».",
+      "source": "A19",
+      "target": "C25"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ» как гипероним для «радиус».",
+      "source": "A20",
+      "target": "C24"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ» как гипероним для «диаметр».",
+      "source": "A20",
+      "target": "C25"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ ЛИНИИ» как гипероним для «радиус».",
+      "source": "A21",
+      "target": "C24"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «ОТРЕЗОК ПРЯМОЙ ЛИНИИ» как гипероним для «диаметр».",
+      "source": "A21",
+      "target": "C25"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «СЕГМЕНТ» как гипероним для «радиус».",
+      "source": "A22",
+      "target": "C24"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «СЕГМЕНТ» как гипероним для «диаметр».",
+      "source": "A22",
+      "target": "C25"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «СЕГМЕНТ ПРЯМОЙ ЛИНИИ» как гипероним для «радиус».",
+      "source": "A23",
+      "target": "C24"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «СЕГМЕНТ ПРЯМОЙ ЛИНИИ» как гипероним для «диаметр».",
+      "source": "A23",
+      "target": "C25"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Лист Edges роли 1 указывает «МЕСТОНАХОЖДЕНИЕ НАХОЖДЕНИЕ ПРЕБЫВАНИЕ» как гипероним для «положение».",
+      "source": "A26",
+      "target": "C19"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 153782-N -> 147134-N.",
+      "source": "HA1:153782-N",
+      "target": "A04"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 153782-N -> 146671-N.",
+      "source": "HA1:153782-N",
+      "target": "HA1:146671-N"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 106768-N -> 106515-N.",
+      "source": "HA1:106768-N",
+      "target": "A03"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 146671-N -> 106768-N.",
+      "source": "HA1:146671-N",
+      "target": "HA1:106768-N"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 149355-N -> 106582-N.",
+      "source": "HA1:149355-N",
+      "target": "A02"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 106581-N -> 149355-N.",
+      "source": "HA1:106581-N",
+      "target": "HA1:149355-N"
+    },
+    {
+      "relation": "is_a",
+      "provenance": "wordnet",
+      "confidence": "medium",
+      "justification": "Путь HA1 RuWordNet: 106509-N -> 106581-N.",
+      "source": "HA1:106509-N",
+      "target": "HA1:106581-N"
+    }
+  ]
+}

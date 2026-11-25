@@ -1,0 +1,57 @@
+node_id,label,node_type,is_target,source,source_id,POS,POS_provenance,definition,definition_provenance
+C01,точка,target,TRUE,HA1; RuWordNet,120377-N,NOUN,wordnet:source_id_suffix,"Определённое положение в пространстве, рассматриваемое без учёта размеров объекта.",generated
+C02,поверхность,target,TRUE,HA1; RuWordNet,107133-N,NOUN,wordnet:source_id_suffix,"Внешняя граница тела, отделяющая его от окружающего пространства.",generated
+C03,граница,target,TRUE,HA1; RuWordNet,106514-N,NOUN,wordnet:source_id_suffix,"Предел, отделяющий одну пространственную область от другой.",generated
+C04,расстояние,target,TRUE,HA1; RuWordNet,106757-N,NOUN,wordnet:source_id_suffix,"Пространственная величина, характеризующая удалённость двух точек или объектов друг от друга.",generated
+C05,высота,target,TRUE,HA1; RuWordNet,106758-N,NOUN,wordnet:source_id_suffix,"Вертикальное расстояние от точки или объекта до выбранного уровня отсчёта, например поверхности земли или уровня моря.",generated
+C06,направление,target,TRUE,HA1; RuWordNet,106586-N,NOUN,wordnet:source_id_suffix,Ориентация в пространстве относительно выбранной системы отсчёта.,generated
+C07,путь,target,TRUE,HA1; RuWordNet,183-N,NOUN,wordnet:source_id_suffix,"Маршрут, по которому перемещаются между исходным и конечным местами.",generated
+C08,вместилище,target,TRUE,HA1; RuWordNet,107038-N,NOUN,wordnet:source_id_suffix,"Ограниченный участок пространства, предназначенный для хранения или транспортировки каких-либо объектов.",generated
+C09,отверстие,target,TRUE,HA1; RuWordNet,107087-N,NOUN,wordnet:source_id_suffix,"Пустое пространство в теле или материале, через которое может проходить другой объект.",generated
+C10,между,target,TRUE,HA1,,ADP,manual:pos_annotations.csv,"Положение объекта в промежутке, ограниченном двумя пространственными ориентирами.",generated
+C11,над,target,TRUE,HA1,,ADP,manual:pos_annotations.csv,Положение объекта выше другого объекта относительно вертикальной оси.,generated
+C12,внутри,target,TRUE,HA1,,ADV,manual:pos_annotations.csv,Положение объекта в пределах ограниченной пространственной области.,generated
+C13,ширина,target,TRUE,RuWordNet,i63979,NOUN,manual:pos_annotations.csv,"Поперечный размер объекта, измеряемый как расстояние между его противоположными боковыми границами.",generated
+C14,глубина,target,TRUE,RuWordNet,i63971,NOUN,manual:pos_annotations.csv,"Расстояние, измеряемое в направлении вниз, назад или внутрь от некоторой поверхности либо исходной точки.",generated
+C15,центр,target,TRUE,RuWordNet,i81833,NOUN,manual:pos_annotations.csv,"Точка, равноудалённая от концов отрезка или крайних точек геометрической фигуры; для окружности — точка, равноудалённая от всех точек окружности.",generated
+C16,угол,target,TRUE,RuWordNet,i109918,NOUN,manual:pos_annotations.csv,"Геометрическая фигура, образованная двумя лучами, исходящими из одной точки.",generated
+C17,пространство,target,TRUE,RuWordNet,i35583,NOUN,manual:pos_annotations.csv,"Неограниченная протяжённость, в которой расположены все физические объекты.",manual
+C18,место,target,TRUE,RuWordNet,106451-N; i35580; i82501,NOUN,wordnet:source_id_suffix,"Точка или участок пространства, в котором расположен объект.",manual
+C19,положение,target,TRUE,RuWordNet,i63666; i63667,NOUN,manual:pos_annotations.csv,Пространственное расположение объекта или порядок его размещения относительно других объектов.,manual
+C20,координата,target,TRUE,RuWordNet,i68377,NOUN,manual:pos_annotations.csv,"Число, определяющее положение точки относительно выбранной оси или системы координат.",manual
+C21,плоскость,target,TRUE,RuWordNet,i109765,NOUN,manual:pos_annotations.csv,Неограниченная двумерная геометрическая поверхность.,manual
+C22,площадь,target,TRUE,RuWordNet,i63937,NOUN,manual:pos_annotations.csv,"Величина, характеризующая размер двумерной поверхности, ограниченной заданным контуром.",manual
+C23,объём,target,TRUE,RuWordNet,i109320,NOUN,manual:pos_annotations.csv,"Величина трёхмерного пространства, занимаемого объектом.",manual
+C24,радиус,target,TRUE,RuWordNet,ILI not provided,NOUN,manual:pos_annotations.csv,"Отрезок, соединяющий центр круга или шара с точкой окружности или поверхности шара; также его длина.",manual
+C25,диаметр,target,TRUE,RuWordNet,i63810; i109824,NOUN,manual:pos_annotations.csv,"Отрезок прямой, проходящий через центр круга или шара и соединяющий две точки его окружности или поверхности.",manual
+A02,ЛИНИЯ ЧЕРТА,auxiliary,FALSE,RuWordNet,106582-N,NOUN,wordnet:source_id_suffix,,not_supplied
+A03,КОЛИЧЕСТВО ВЕЛИЧИНА ЧИСЛО,auxiliary,FALSE,RuWordNet,106515-N,NOUN,wordnet:source_id_suffix,,not_supplied
+A04,ФИЗИЧЕСКАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,147134-N,NOUN,wordnet:source_id_suffix,,not_supplied
+A05,ФИЗИЧЕСКИ СУЩЕСТВУЮЩАЯ СУЩНОСТЬ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A06,ГЕОМЕТРИЧЕСКАЯ ФИГУРА,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A07,ФИГУРА,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A08,БЫТНОСТЬ МЕСТОНАХОЖДЕНИЕ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A09,ЧИСЛО,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A10,КОЛИЧЕСТВЕННЫЙ ПАРАМЕТР,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A11,ПАРАМЕТР,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A12,ВЕЛИЧИНА,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A13,ЛИНЕЙНЫЙ РАЗМЕР,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A14,ПРОТЯЖЕНИЕ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A15,ПРОТЯЖЕННОСТЬ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A16,РАЗМЕР,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A17,ДИСТАНЦИЯ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A18,ДЛИНА,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A19,ОТРЕЗОК,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A20,ОТРЕЗОК ПРЯМОЙ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A21,ОТРЕЗОК ПРЯМОЙ ЛИНИИ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A22,СЕГМЕНТ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A23,СЕГМЕНТ ПРЯМОЙ ЛИНИИ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A25,СРЕДИНА СЕРЕДИНА,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A26,МЕСТОНАХОЖДЕНИЕ НАХОЖДЕНИЕ ПРЕБЫВАНИЕ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+A27,ПОЛОЖЕНИЕ РАСПОЛОЖЕНИЕ,auxiliary,FALSE,RuWordNet,,NOUN,manual:pos_annotations.csv,,not_supplied
+HA1:153782-N,ПОСТОЯННАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,153782-N,NOUN,wordnet:source_id_suffix,,not_supplied
+HA1:106768-N,"СВОЙСТВО, ХАРАКТЕРИСТИКА",auxiliary,FALSE,HA1; RuWordNet,106768-N,NOUN,wordnet:source_id_suffix,,not_supplied
+HA1:146671-N,АБСТРАКТНАЯ СУЩНОСТЬ,auxiliary,FALSE,HA1; RuWordNet,146671-N,NOUN,wordnet:source_id_suffix,,not_supplied
+HA1:149355-N,ПОЛОСА НА ПОВЕРХНОСТИ,auxiliary,FALSE,HA1; RuWordNet,149355-N,NOUN,wordnet:source_id_suffix,,not_supplied
+HA1:106581-N,"ПОЛОСА НА ПОВЕРХНОСТИ, В ПРОСТРАНСТВЕ",auxiliary,FALSE,HA1; RuWordNet,106581-N,NOUN,wordnet:source_id_suffix,,not_supplied
+HA1:106509-N,СОСТАВНАЯ ЧАСТЬ,auxiliary,FALSE,HA1; RuWordNet,106509-N,NOUN,wordnet:source_id_suffix,,not_supplied
